@@ -10,7 +10,6 @@ s.requires_arc = true
 s.ios.deployment_target = '8.0'
 s.source_files = "JKBaseKit", "*.{h,m}"
 spec.dependency 'AFNetworking', '~> 3.0.2'
-spec.dependency 'DateTools'
 spec.dependency 'MJRefresh'
 spec.dependency 'IQKeyboardManager'
 spec.dependency 'SDWebImage'
