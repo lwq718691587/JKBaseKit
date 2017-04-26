@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <DateTools.h>
 @interface NSString (LQAddition)
 /**
  *  调整行间距
@@ -18,12 +17,6 @@
  *  @return 调整好行间距的字符串
  */
 - (NSMutableAttributedString *)getSpaceStr:(CGFloat)spacing;
-/**
- *  时间戳字符串 转 时间字符串
- *
- *  @return 时间字符串
- */
-- (NSString *)getTimeStrOfTimeStamp;
 /**
  *  字符串转二进制
  *

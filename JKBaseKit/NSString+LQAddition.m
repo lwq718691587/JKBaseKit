@@ -24,10 +24,7 @@
     return attributedString;
 }
 
-- (NSString *)getTimeStrOfTimeStamp{
-    NSDate *date = [NSDate dateWithTimeIntervalSince1970:[self intValue]];
-    return  [date formattedDateWithFormat:@"YYYY-MM-dd HH:MM"];
-}
+
 
 - (NSData *)hexData
 {
