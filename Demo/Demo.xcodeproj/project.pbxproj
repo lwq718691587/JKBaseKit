@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BCB07ABAD1043359EF7F9492 /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9119CA83D63B5124559DB728 /* libPods-Demo.a */; };
 		FC4AFE341EB0A89700C26CC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4AFE331EB0A89700C26CC7 /* main.m */; };
 		FC4AFE371EB0A89700C26CC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4AFE361EB0A89700C26CC7 /* AppDelegate.m */; };
 		FC4AFE3A1EB0A89700C26CC7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4AFE391EB0A89700C26CC7 /* ViewController.m */; };
@@ -15,7 +16,19 @@
 		FC4AFE421EB0A89700C26CC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4AFE401EB0A89700C26CC7 /* LaunchScreen.storyboard */; };
 		FC4AFE4D1EB0A89700C26CC7 /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4AFE4C1EB0A89700C26CC7 /* DemoTests.m */; };
 		FC4AFE581EB0A89700C26CC7 /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4AFE571EB0A89700C26CC7 /* DemoUITests.m */; };
-		FC4AFE681EB0A8CC00C26CC7 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4AFE671EB0A8CC00C26CC7 /* Helper.m */; };
+		FCB890C21EBB27F2007FF46A /* BGAFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890AA1EBB27F1007FF46A /* BGAFHTTPClient.m */; };
+		FCB890C41EBB27F2007FF46A /* BGAFResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890AE1EBB27F1007FF46A /* BGAFResponseSerializer.m */; };
+		FCB890C51EBB27F2007FF46A /* BGBatchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890B01EBB27F1007FF46A /* BGBatchRequest.m */; };
+		FCB890C61EBB27F2007FF46A /* BGDownloadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890B21EBB27F1007FF46A /* BGDownloadRequest.m */; };
+		FCB890C71EBB27F2007FF46A /* BGNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890B51EBB27F1007FF46A /* BGNetworkCache.m */; };
+		FCB890C81EBB27F2007FF46A /* BGNetworkConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890B71EBB27F1007FF46A /* BGNetworkConfiguration.m */; };
+		FCB890C91EBB27F2007FF46A /* BGNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890B91EBB27F2007FF46A /* BGNetworkManager.m */; };
+		FCB890CA1EBB27F2007FF46A /* BGNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890BB1EBB27F2007FF46A /* BGNetworkRequest.m */; };
+		FCB890CB1EBB27F2007FF46A /* BGUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890BD1EBB27F2007FF46A /* BGUploadRequest.m */; };
+		FCB890CC1EBB27F2007FF46A /* BGUtilFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890BF1EBB27F2007FF46A /* BGUtilFunction.m */; };
+		FCB890D01EBB2C27007FF46A /* JKBGNetworkConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890CF1EBB2C27007FF46A /* JKBGNetworkConfiguration.m */; };
+		FCB8911A1EBC82A3007FF46A /* BGAFRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB891191EBC82A3007FF46A /* BGAFRequestSerializer.m */; };
+		FCB8911E1EBC8D27007FF46A /* JKInternetSettingRequst.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB8911D1EBC8D27007FF46A /* JKInternetSettingRequst.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A1130ADB3504DFDC9A2F1B7 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		8FC54278E3C6DDC59DD23D25 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		9119CA83D63B5124559DB728 /* libPods-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4AFE2F1EB0A89700C26CC7 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4AFE331EB0A89700C26CC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC4AFE351EB0A89700C26CC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,8 +68,33 @@
 		FC4AFE531EB0A89700C26CC7 /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4AFE571EB0A89700C26CC7 /* DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUITests.m; sourceTree = "<group>"; };
 		FC4AFE591EB0A89700C26CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC4AFE661EB0A8CC00C26CC7 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
-		FC4AFE671EB0A8CC00C26CC7 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
+		FCB890A91EBB27F1007FF46A /* BGAFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGAFHTTPClient.h; sourceTree = "<group>"; };
+		FCB890AA1EBB27F1007FF46A /* BGAFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAFHTTPClient.m; sourceTree = "<group>"; };
+		FCB890AD1EBB27F1007FF46A /* BGAFResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGAFResponseSerializer.h; sourceTree = "<group>"; };
+		FCB890AE1EBB27F1007FF46A /* BGAFResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAFResponseSerializer.m; sourceTree = "<group>"; };
+		FCB890AF1EBB27F1007FF46A /* BGBatchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGBatchRequest.h; sourceTree = "<group>"; };
+		FCB890B01EBB27F1007FF46A /* BGBatchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGBatchRequest.m; sourceTree = "<group>"; };
+		FCB890B11EBB27F1007FF46A /* BGDownloadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGDownloadRequest.h; sourceTree = "<group>"; };
+		FCB890B21EBB27F1007FF46A /* BGDownloadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGDownloadRequest.m; sourceTree = "<group>"; };
+		FCB890B31EBB27F1007FF46A /* BGNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGNetwork.h; sourceTree = "<group>"; };
+		FCB890B41EBB27F1007FF46A /* BGNetworkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGNetworkCache.h; sourceTree = "<group>"; };
+		FCB890B51EBB27F1007FF46A /* BGNetworkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGNetworkCache.m; sourceTree = "<group>"; };
+		FCB890B61EBB27F1007FF46A /* BGNetworkConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGNetworkConfiguration.h; sourceTree = "<group>"; };
+		FCB890B71EBB27F1007FF46A /* BGNetworkConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGNetworkConfiguration.m; sourceTree = "<group>"; };
+		FCB890B81EBB27F1007FF46A /* BGNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGNetworkManager.h; sourceTree = "<group>"; };
+		FCB890B91EBB27F2007FF46A /* BGNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGNetworkManager.m; sourceTree = "<group>"; };
+		FCB890BA1EBB27F2007FF46A /* BGNetworkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGNetworkRequest.h; sourceTree = "<group>"; };
+		FCB890BB1EBB27F2007FF46A /* BGNetworkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGNetworkRequest.m; sourceTree = "<group>"; };
+		FCB890BC1EBB27F2007FF46A /* BGUploadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGUploadRequest.h; sourceTree = "<group>"; };
+		FCB890BD1EBB27F2007FF46A /* BGUploadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGUploadRequest.m; sourceTree = "<group>"; };
+		FCB890BE1EBB27F2007FF46A /* BGUtilFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGUtilFunction.h; sourceTree = "<group>"; };
+		FCB890BF1EBB27F2007FF46A /* BGUtilFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGUtilFunction.m; sourceTree = "<group>"; };
+		FCB890CE1EBB2C27007FF46A /* JKBGNetworkConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKBGNetworkConfiguration.h; sourceTree = "<group>"; };
+		FCB890CF1EBB2C27007FF46A /* JKBGNetworkConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKBGNetworkConfiguration.m; sourceTree = "<group>"; };
+		FCB891191EBC82A3007FF46A /* BGAFRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAFRequestSerializer.m; sourceTree = "<group>"; };
+		FCB8911B1EBC82B0007FF46A /* BGAFRequestSerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGAFRequestSerializer.h; sourceTree = "<group>"; };
+		FCB8911C1EBC8D27007FF46A /* JKInternetSettingRequst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKInternetSettingRequst.h; sourceTree = "<group>"; };
+		FCB8911D1EBC8D27007FF46A /* JKInternetSettingRequst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKInternetSettingRequst.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCB07ABAD1043359EF7F9492 /* libPods-Demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,14 +123,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		662F627A425F2F9A11F78378 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FC54278E3C6DDC59DD23D25 /* Pods-Demo.debug.xcconfig */,
+				6A1130ADB3504DFDC9A2F1B7 /* Pods-Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC7FC8D53B03DF89DD78C304 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9119CA83D63B5124559DB728 /* libPods-Demo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FC4AFE261EB0A89700C26CC7 = {
 			isa = PBXGroup;
 			children = (
-				FC4AFE651EB0A8CC00C26CC7 /* JKBaseKit */,
 				FC4AFE311EB0A89700C26CC7 /* Demo */,
 				FC4AFE4B1EB0A89700C26CC7 /* DemoTests */,
 				FC4AFE561EB0A89700C26CC7 /* DemoUITests */,
 				FC4AFE301EB0A89700C26CC7 /* Products */,
+				662F627A425F2F9A11F78378 /* Pods */,
+				EC7FC8D53B03DF89DD78C304 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,8 +165,13 @@
 		FC4AFE311EB0A89700C26CC7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				FCB890A81EBB27F1007FF46A /* JKBaseKit */,
 				FC4AFE351EB0A89700C26CC7 /* AppDelegate.h */,
 				FC4AFE361EB0A89700C26CC7 /* AppDelegate.m */,
+				FCB890CE1EBB2C27007FF46A /* JKBGNetworkConfiguration.h */,
+				FCB890CF1EBB2C27007FF46A /* JKBGNetworkConfiguration.m */,
+				FCB8911C1EBC8D27007FF46A /* JKInternetSettingRequst.h */,
+				FCB8911D1EBC8D27007FF46A /* JKInternetSettingRequst.m */,
 				FC4AFE381EB0A89700C26CC7 /* ViewController.h */,
 				FC4AFE391EB0A89700C26CC7 /* ViewController.m */,
 				FC4AFE3B1EB0A89700C26CC7 /* Main.storyboard */,
@@ -144,11 +209,32 @@
 			path = DemoUITests;
 			sourceTree = "<group>";
 		};
-		FC4AFE651EB0A8CC00C26CC7 /* JKBaseKit */ = {
+		FCB890A81EBB27F1007FF46A /* JKBaseKit */ = {
 			isa = PBXGroup;
 			children = (
-				FC4AFE661EB0A8CC00C26CC7 /* Helper.h */,
-				FC4AFE671EB0A8CC00C26CC7 /* Helper.m */,
+				FCB890A91EBB27F1007FF46A /* BGAFHTTPClient.h */,
+				FCB890AA1EBB27F1007FF46A /* BGAFHTTPClient.m */,
+				FCB8911B1EBC82B0007FF46A /* BGAFRequestSerializer.h */,
+				FCB891191EBC82A3007FF46A /* BGAFRequestSerializer.m */,
+				FCB890AD1EBB27F1007FF46A /* BGAFResponseSerializer.h */,
+				FCB890AE1EBB27F1007FF46A /* BGAFResponseSerializer.m */,
+				FCB890AF1EBB27F1007FF46A /* BGBatchRequest.h */,
+				FCB890B01EBB27F1007FF46A /* BGBatchRequest.m */,
+				FCB890B11EBB27F1007FF46A /* BGDownloadRequest.h */,
+				FCB890B21EBB27F1007FF46A /* BGDownloadRequest.m */,
+				FCB890B31EBB27F1007FF46A /* BGNetwork.h */,
+				FCB890B41EBB27F1007FF46A /* BGNetworkCache.h */,
+				FCB890B51EBB27F1007FF46A /* BGNetworkCache.m */,
+				FCB890B61EBB27F1007FF46A /* BGNetworkConfiguration.h */,
+				FCB890B71EBB27F1007FF46A /* BGNetworkConfiguration.m */,
+				FCB890B81EBB27F1007FF46A /* BGNetworkManager.h */,
+				FCB890B91EBB27F2007FF46A /* BGNetworkManager.m */,
+				FCB890BA1EBB27F2007FF46A /* BGNetworkRequest.h */,
+				FCB890BB1EBB27F2007FF46A /* BGNetworkRequest.m */,
+				FCB890BC1EBB27F2007FF46A /* BGUploadRequest.h */,
+				FCB890BD1EBB27F2007FF46A /* BGUploadRequest.m */,
+				FCB890BE1EBB27F2007FF46A /* BGUtilFunction.h */,
+				FCB890BF1EBB27F2007FF46A /* BGUtilFunction.m */,
 			);
 			path = JKBaseKit;
 			sourceTree = "<group>";
@@ -160,9 +246,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC4AFE5C1EB0A89700C26CC7 /* Build configuration list for PBXNativeTarget "Demo" */;
 			buildPhases = (
+				3632056509E7891CE1E30028 /* [CP] Check Pods Manifest.lock */,
 				FC4AFE2B1EB0A89700C26CC7 /* Sources */,
 				FC4AFE2C1EB0A89700C26CC7 /* Frameworks */,
 				FC4AFE2D1EB0A89700C26CC7 /* Resources */,
+				C03D6B74B5A0CC5B1B403E5B /* [CP] Embed Pods Frameworks */,
+				50D33D3365708EB90DF9A854 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -281,15 +370,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3632056509E7891CE1E30028 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		50D33D3365708EB90DF9A854 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C03D6B74B5A0CC5B1B403E5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FC4AFE2B1EB0A89700C26CC7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCB890C61EBB27F2007FF46A /* BGDownloadRequest.m in Sources */,
 				FC4AFE3A1EB0A89700C26CC7 /* ViewController.m in Sources */,
+				FCB890C91EBB27F2007FF46A /* BGNetworkManager.m in Sources */,
+				FCB890C51EBB27F2007FF46A /* BGBatchRequest.m in Sources */,
+				FCB8911E1EBC8D27007FF46A /* JKInternetSettingRequst.m in Sources */,
 				FC4AFE371EB0A89700C26CC7 /* AppDelegate.m in Sources */,
+				FCB890C21EBB27F2007FF46A /* BGAFHTTPClient.m in Sources */,
+				FCB890CB1EBB27F2007FF46A /* BGUploadRequest.m in Sources */,
+				FCB890CC1EBB27F2007FF46A /* BGUtilFunction.m in Sources */,
+				FCB890C81EBB27F2007FF46A /* BGNetworkConfiguration.m in Sources */,
+				FCB890D01EBB2C27007FF46A /* JKBGNetworkConfiguration.m in Sources */,
+				FCB8911A1EBC82A3007FF46A /* BGAFRequestSerializer.m in Sources */,
+				FCB890C71EBB27F2007FF46A /* BGNetworkCache.m in Sources */,
+				FCB890CA1EBB27F2007FF46A /* BGNetworkRequest.m in Sources */,
+				FCB890C41EBB27F2007FF46A /* BGAFResponseSerializer.m in Sources */,
 				FC4AFE341EB0A89700C26CC7 /* main.m in Sources */,
-				FC4AFE681EB0A8CC00C26CC7 /* Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +587,7 @@
 		};
 		FC4AFE5D1EB0A89700C26CC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FC54278E3C6DDC59DD23D25 /* Pods-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Demo/Info.plist;
@@ -449,6 +599,7 @@
 		};
 		FC4AFE5E1EB0A89700C26CC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A1130ADB3504DFDC9A2F1B7 /* Pods-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Demo/Info.plist;

@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "BGNetwork.h"
+#import "JKInternetSettingRequst.h"
 @interface ViewController ()
 
 @end
@@ -16,6 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    JKInternetSettingRequst * request = [[JKInternetSettingRequst alloc]init];
+    [request sendRequestWithSuccess:^(BGNetworkRequest * _Nonnull request, id  _Nullable response) {
+        
+    } businessFailure:^(BGNetworkRequest * _Nonnull request, id  _Nullable response) {
+        
+    } networkFailure:^(BGNetworkRequest * _Nonnull request, NSError * _Nullable error) {
+        
+    }];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

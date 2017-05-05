@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "BGNetwork.h"
+#import "JKBGNetworkConfiguration.h"
 @interface AppDelegate ()
 
 @end
@@ -16,6 +17,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    
+    [[BGNetworkManager sharedManager] setNetworkConfiguration:[JKBGNetworkConfiguration configuration]];
     // Override point for customization after application launch.
     return YES;
 }
