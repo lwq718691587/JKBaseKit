@@ -20,7 +20,7 @@ s.subspec 'BGNetWorking' do |netWorking|
 end
 
 s.subspec 'JKAdditions' do |additions|
-  additions  = "JKBaseKit/JKAdditions","*.{h,m}"
+  additions.source_files   = "JKBaseKit/JKAdditions","*.{h,m}"
 end
 
 end
