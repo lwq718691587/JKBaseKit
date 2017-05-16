@@ -11,17 +11,13 @@
 
 @interface BGNetworkConfiguration ()
 @property(nonatomic, strong) NSString *baseURLString;
+
 @end
 
 @implementation BGNetworkConfiguration
 
 + (instancetype)configuration{
-    return [self configurationWithBaseURL: @"http://api.izhangchu.com:/"];
-}
-
-+ (instancetype _Nonnull)configurationWithBaseURL:(NSString *)baseURL {
     BGNetworkConfiguration *configuration = [[self alloc] init];
-    configuration.baseURLString = baseURL;
     return configuration;
 }
 
@@ -30,20 +26,19 @@
     return _baseURLString;
 }
 
+-(NSInteger)NetworkTimeoutInterval{
+    return 15;
+}
+
+-(NSDictionary *)headerDic{
+    return @{};
+}
+
+
 - (void)preProcessingRequest:(BGNetworkRequest *)request {
     
 }
 
-- (NSDictionary *)requestHTTPHeaderFields:(BGNetworkRequest *)request {
-    NSMutableDictionary *allHTTPHeaderFileds = [@{
-                                                  @"Content-Type":@"application/json",
-                                                  @"User-Agent":@"iPhone"
-                                                  } mutableCopy];
-    [request.requestHTTPHeaderFields enumerateKeysAndObjectsUsingBlock:^(NSString *key, id obj, BOOL *stop) {
-        allHTTPHeaderFileds[key] = obj;
-    }];
-    return allHTTPHeaderFileds;
-}
 
 - (NSString *)queryStringForURLWithRequest:(BGNetworkRequest *)request{
     if(request.httpMethod == BGNetworkRequestHTTPGet){

@@ -16,6 +16,8 @@
 		FC4AFE421EB0A89700C26CC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4AFE401EB0A89700C26CC7 /* LaunchScreen.storyboard */; };
 		FC4AFE4D1EB0A89700C26CC7 /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4AFE4C1EB0A89700C26CC7 /* DemoTests.m */; };
 		FC4AFE581EB0A89700C26CC7 /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4AFE571EB0A89700C26CC7 /* DemoUITests.m */; };
+		FC7DACE11EC2CED000E16C5D /* JKPharmacListByCategoryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7DACE01EC2CED000E16C5D /* JKPharmacListByCategoryRequest.m */; };
+		FC7DACE41EC2D49600E16C5D /* JKDrugSearchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7DACE31EC2D49600E16C5D /* JKDrugSearchRequest.m */; };
 		FCB890C21EBB27F2007FF46A /* BGAFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890AA1EBB27F1007FF46A /* BGAFHTTPClient.m */; };
 		FCB890C41EBB27F2007FF46A /* BGAFResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890AE1EBB27F1007FF46A /* BGAFResponseSerializer.m */; };
 		FCB890C51EBB27F2007FF46A /* BGBatchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890B01EBB27F1007FF46A /* BGBatchRequest.m */; };
@@ -27,7 +29,6 @@
 		FCB890CB1EBB27F2007FF46A /* BGUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890BD1EBB27F2007FF46A /* BGUploadRequest.m */; };
 		FCB890CC1EBB27F2007FF46A /* BGUtilFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890BF1EBB27F2007FF46A /* BGUtilFunction.m */; };
 		FCB890D01EBB2C27007FF46A /* JKBGNetworkConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890CF1EBB2C27007FF46A /* JKBGNetworkConfiguration.m */; };
-		FCB8911A1EBC82A3007FF46A /* BGAFRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB891191EBC82A3007FF46A /* BGAFRequestSerializer.m */; };
 		FCB8911E1EBC8D27007FF46A /* JKInternetSettingRequst.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB8911D1EBC8D27007FF46A /* JKInternetSettingRequst.m */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,10 @@
 		FC4AFE531EB0A89700C26CC7 /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4AFE571EB0A89700C26CC7 /* DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUITests.m; sourceTree = "<group>"; };
 		FC4AFE591EB0A89700C26CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC7DACDF1EC2CED000E16C5D /* JKPharmacListByCategoryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPharmacListByCategoryRequest.h; sourceTree = "<group>"; };
+		FC7DACE01EC2CED000E16C5D /* JKPharmacListByCategoryRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKPharmacListByCategoryRequest.m; sourceTree = "<group>"; };
+		FC7DACE21EC2D49600E16C5D /* JKDrugSearchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKDrugSearchRequest.h; sourceTree = "<group>"; };
+		FC7DACE31EC2D49600E16C5D /* JKDrugSearchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKDrugSearchRequest.m; sourceTree = "<group>"; };
 		FCB890A91EBB27F1007FF46A /* BGAFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGAFHTTPClient.h; sourceTree = "<group>"; };
 		FCB890AA1EBB27F1007FF46A /* BGAFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAFHTTPClient.m; sourceTree = "<group>"; };
 		FCB890AD1EBB27F1007FF46A /* BGAFResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGAFResponseSerializer.h; sourceTree = "<group>"; };
@@ -91,8 +96,6 @@
 		FCB890BF1EBB27F2007FF46A /* BGUtilFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGUtilFunction.m; sourceTree = "<group>"; };
 		FCB890CE1EBB2C27007FF46A /* JKBGNetworkConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKBGNetworkConfiguration.h; sourceTree = "<group>"; };
 		FCB890CF1EBB2C27007FF46A /* JKBGNetworkConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKBGNetworkConfiguration.m; sourceTree = "<group>"; };
-		FCB891191EBC82A3007FF46A /* BGAFRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAFRequestSerializer.m; sourceTree = "<group>"; };
-		FCB8911B1EBC82B0007FF46A /* BGAFRequestSerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGAFRequestSerializer.h; sourceTree = "<group>"; };
 		FCB8911C1EBC8D27007FF46A /* JKInternetSettingRequst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKInternetSettingRequst.h; sourceTree = "<group>"; };
 		FCB8911D1EBC8D27007FF46A /* JKInternetSettingRequst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKInternetSettingRequst.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,6 +175,10 @@
 				FCB890CF1EBB2C27007FF46A /* JKBGNetworkConfiguration.m */,
 				FCB8911C1EBC8D27007FF46A /* JKInternetSettingRequst.h */,
 				FCB8911D1EBC8D27007FF46A /* JKInternetSettingRequst.m */,
+				FC7DACDF1EC2CED000E16C5D /* JKPharmacListByCategoryRequest.h */,
+				FC7DACE01EC2CED000E16C5D /* JKPharmacListByCategoryRequest.m */,
+				FC7DACE21EC2D49600E16C5D /* JKDrugSearchRequest.h */,
+				FC7DACE31EC2D49600E16C5D /* JKDrugSearchRequest.m */,
 				FC4AFE381EB0A89700C26CC7 /* ViewController.h */,
 				FC4AFE391EB0A89700C26CC7 /* ViewController.m */,
 				FC4AFE3B1EB0A89700C26CC7 /* Main.storyboard */,
@@ -214,8 +221,6 @@
 			children = (
 				FCB890A91EBB27F1007FF46A /* BGAFHTTPClient.h */,
 				FCB890AA1EBB27F1007FF46A /* BGAFHTTPClient.m */,
-				FCB8911B1EBC82B0007FF46A /* BGAFRequestSerializer.h */,
-				FCB891191EBC82A3007FF46A /* BGAFRequestSerializer.m */,
 				FCB890AD1EBB27F1007FF46A /* BGAFResponseSerializer.h */,
 				FCB890AE1EBB27F1007FF46A /* BGAFResponseSerializer.m */,
 				FCB890AF1EBB27F1007FF46A /* BGBatchRequest.h */,
@@ -427,6 +432,7 @@
 				FC4AFE3A1EB0A89700C26CC7 /* ViewController.m in Sources */,
 				FCB890C91EBB27F2007FF46A /* BGNetworkManager.m in Sources */,
 				FCB890C51EBB27F2007FF46A /* BGBatchRequest.m in Sources */,
+				FC7DACE11EC2CED000E16C5D /* JKPharmacListByCategoryRequest.m in Sources */,
 				FCB8911E1EBC8D27007FF46A /* JKInternetSettingRequst.m in Sources */,
 				FC4AFE371EB0A89700C26CC7 /* AppDelegate.m in Sources */,
 				FCB890C21EBB27F2007FF46A /* BGAFHTTPClient.m in Sources */,
@@ -434,8 +440,8 @@
 				FCB890CC1EBB27F2007FF46A /* BGUtilFunction.m in Sources */,
 				FCB890C81EBB27F2007FF46A /* BGNetworkConfiguration.m in Sources */,
 				FCB890D01EBB2C27007FF46A /* JKBGNetworkConfiguration.m in Sources */,
-				FCB8911A1EBC82A3007FF46A /* BGAFRequestSerializer.m in Sources */,
 				FCB890C71EBB27F2007FF46A /* BGNetworkCache.m in Sources */,
+				FC7DACE41EC2D49600E16C5D /* JKDrugSearchRequest.m in Sources */,
 				FCB890CA1EBB27F2007FF46A /* BGNetworkRequest.m in Sources */,
 				FCB890C41EBB27F2007FF46A /* BGAFResponseSerializer.m in Sources */,
 				FC4AFE341EB0A89700C26CC7 /* main.m in Sources */,

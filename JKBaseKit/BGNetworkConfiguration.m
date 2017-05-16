@@ -34,10 +34,12 @@
 }
 
 - (NSDictionary *)requestHTTPHeaderFields:(BGNetworkRequest *)request {
-    NSMutableDictionary *allHTTPHeaderFileds = [@{
-                                                  @"Content-Type":@"application/json",
-                                                  @"User-Agent":@"iPhone"
-                                                  } mutableCopy];
+    NSMutableDictionary *allHTTPHeaderFileds = [@{@"User-Agent":@"iPhone"} mutableCopy];
+    if (request.isJsonParamType) {
+        [allHTTPHeaderFileds setValue:@"application/json" forKey:@"Content-Type"];
+    }else{
+        [allHTTPHeaderFileds setValue:@"application/x-www-form-urlencoded" forKey:@"Content-Type"];
+    }
     [request.requestHTTPHeaderFields enumerateKeysAndObjectsUsingBlock:^(NSString *key, id obj, BOOL *stop) {
         allHTTPHeaderFileds[key] = obj;
     }];
@@ -54,13 +56,27 @@
 }
 
 - (NSData *)httpBodyDataWithRequest:(BGNetworkRequest *)request{
-    if(!request.parametersDic.count){
+    if(request.httpMethod == BGNetworkRequestHTTPGet || !request.parametersDic.count){
         return nil;
     }
-    NSError *error = nil;
-    NSData *httpBody = [NSJSONSerialization dataWithJSONObject:request.parametersDic options: (NSJSONWritingOptions)0 error:&error];
-    if(error){
-        return nil;
+    NSData *httpBody;
+    if (request.isJsonParamType) {
+        NSError *error = nil;
+        httpBody = [NSJSONSerialization dataWithJSONObject:request.parametersDic options: (NSJSONWritingOptions)0 error:&error];
+        if(error){
+            return nil;
+        }
+    }else{
+        NSString * __block finalStr = @"";
+        [request.parametersDic enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+            NSString * perStr = [NSString stringWithFormat:@"&%@=%@",key,obj];
+            finalStr = [finalStr stringByAppendingString:perStr];
+        }];
+        if (finalStr.length > 1) {
+            httpBody = [[finalStr substringFromIndex:1] dataUsingEncoding:NSUTF8StringEncoding];
+        }else{
+            return nil;
+        }
     }
     return httpBody;
 }

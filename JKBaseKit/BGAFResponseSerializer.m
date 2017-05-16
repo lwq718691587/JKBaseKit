@@ -15,7 +15,7 @@
         return nil;
     }
     
-    self.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html",nil];
+    self.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"application/xml",@"text/xml",@"text/html",@"text/plain",nil];
     
     return self;
 }
