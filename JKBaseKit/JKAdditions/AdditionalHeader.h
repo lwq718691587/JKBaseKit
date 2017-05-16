@@ -10,6 +10,6 @@
 #define AdditionalHeader_h
 
 #import "UIView+Additional.h"
-
+#import "SVProgressHUD+Additonal.h"
 
 #endif /* AdditionalHeader_h */
