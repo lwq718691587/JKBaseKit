@@ -82,7 +82,7 @@
 
 - (void)cancelAllRequest {
     for (BGNetworkRequest *request in self.requestArray) {
-#warning 取消请求是否用类方法取消？
+//取消请求是否用类方法取消？
         [[request class] cancelRequest];
     }
 }
