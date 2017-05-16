@@ -1,3 +1,0 @@
-target ‘Demo’ do
-pod 'JKBaseKit'
-end
