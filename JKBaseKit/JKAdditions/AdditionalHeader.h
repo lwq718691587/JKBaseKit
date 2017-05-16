@@ -9,7 +9,7 @@
 #ifndef AdditionalHeader_h
 #define AdditionalHeader_h
 
-#import "UIView+Additional"
+#import "UIView+Additional.h"
 
 
 #endif /* AdditionalHeader_h */
