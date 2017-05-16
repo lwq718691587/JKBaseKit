@@ -18,18 +18,19 @@
 		FC4AFE581EB0A89700C26CC7 /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4AFE571EB0A89700C26CC7 /* DemoUITests.m */; };
 		FC7DACE11EC2CED000E16C5D /* JKPharmacListByCategoryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7DACE01EC2CED000E16C5D /* JKPharmacListByCategoryRequest.m */; };
 		FC7DACE41EC2D49600E16C5D /* JKDrugSearchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7DACE31EC2D49600E16C5D /* JKDrugSearchRequest.m */; };
-		FCB890C21EBB27F2007FF46A /* BGAFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890AA1EBB27F1007FF46A /* BGAFHTTPClient.m */; };
-		FCB890C41EBB27F2007FF46A /* BGAFResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890AE1EBB27F1007FF46A /* BGAFResponseSerializer.m */; };
-		FCB890C51EBB27F2007FF46A /* BGBatchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890B01EBB27F1007FF46A /* BGBatchRequest.m */; };
-		FCB890C61EBB27F2007FF46A /* BGDownloadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890B21EBB27F1007FF46A /* BGDownloadRequest.m */; };
-		FCB890C71EBB27F2007FF46A /* BGNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890B51EBB27F1007FF46A /* BGNetworkCache.m */; };
-		FCB890C81EBB27F2007FF46A /* BGNetworkConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890B71EBB27F1007FF46A /* BGNetworkConfiguration.m */; };
-		FCB890C91EBB27F2007FF46A /* BGNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890B91EBB27F2007FF46A /* BGNetworkManager.m */; };
-		FCB890CA1EBB27F2007FF46A /* BGNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890BB1EBB27F2007FF46A /* BGNetworkRequest.m */; };
-		FCB890CB1EBB27F2007FF46A /* BGUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890BD1EBB27F2007FF46A /* BGUploadRequest.m */; };
-		FCB890CC1EBB27F2007FF46A /* BGUtilFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890BF1EBB27F2007FF46A /* BGUtilFunction.m */; };
 		FCB890D01EBB2C27007FF46A /* JKBGNetworkConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB890CF1EBB2C27007FF46A /* JKBGNetworkConfiguration.m */; };
 		FCB8911E1EBC8D27007FF46A /* JKInternetSettingRequst.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB8911D1EBC8D27007FF46A /* JKInternetSettingRequst.m */; };
+		FCC028551ECAAA7D00C14FB5 /* BGAFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC0283F1ECAAA7D00C14FB5 /* BGAFHTTPClient.m */; };
+		FCC028561ECAAA7D00C14FB5 /* BGAFRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC028411ECAAA7D00C14FB5 /* BGAFRequestSerializer.m */; };
+		FCC028571ECAAA7D00C14FB5 /* BGAFResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC028431ECAAA7D00C14FB5 /* BGAFResponseSerializer.m */; };
+		FCC028581ECAAA7D00C14FB5 /* BGBatchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC028451ECAAA7D00C14FB5 /* BGBatchRequest.m */; };
+		FCC028591ECAAA7D00C14FB5 /* BGDownloadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC028471ECAAA7D00C14FB5 /* BGDownloadRequest.m */; };
+		FCC0285A1ECAAA7D00C14FB5 /* BGNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC0284A1ECAAA7D00C14FB5 /* BGNetworkCache.m */; };
+		FCC0285B1ECAAA7D00C14FB5 /* BGNetworkConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC0284C1ECAAA7D00C14FB5 /* BGNetworkConfiguration.m */; };
+		FCC0285C1ECAAA7D00C14FB5 /* BGNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC0284E1ECAAA7D00C14FB5 /* BGNetworkManager.m */; };
+		FCC0285D1ECAAA7D00C14FB5 /* BGNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC028501ECAAA7D00C14FB5 /* BGNetworkRequest.m */; };
+		FCC0285E1ECAAA7D00C14FB5 /* BGUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC028521ECAAA7D00C14FB5 /* BGUploadRequest.m */; };
+		FCC0285F1ECAAA7D00C14FB5 /* BGUtilFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC028541ECAAA7D00C14FB5 /* BGUtilFunction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,31 +74,33 @@
 		FC7DACE01EC2CED000E16C5D /* JKPharmacListByCategoryRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKPharmacListByCategoryRequest.m; sourceTree = "<group>"; };
 		FC7DACE21EC2D49600E16C5D /* JKDrugSearchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKDrugSearchRequest.h; sourceTree = "<group>"; };
 		FC7DACE31EC2D49600E16C5D /* JKDrugSearchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKDrugSearchRequest.m; sourceTree = "<group>"; };
-		FCB890A91EBB27F1007FF46A /* BGAFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGAFHTTPClient.h; sourceTree = "<group>"; };
-		FCB890AA1EBB27F1007FF46A /* BGAFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAFHTTPClient.m; sourceTree = "<group>"; };
-		FCB890AD1EBB27F1007FF46A /* BGAFResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGAFResponseSerializer.h; sourceTree = "<group>"; };
-		FCB890AE1EBB27F1007FF46A /* BGAFResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAFResponseSerializer.m; sourceTree = "<group>"; };
-		FCB890AF1EBB27F1007FF46A /* BGBatchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGBatchRequest.h; sourceTree = "<group>"; };
-		FCB890B01EBB27F1007FF46A /* BGBatchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGBatchRequest.m; sourceTree = "<group>"; };
-		FCB890B11EBB27F1007FF46A /* BGDownloadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGDownloadRequest.h; sourceTree = "<group>"; };
-		FCB890B21EBB27F1007FF46A /* BGDownloadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGDownloadRequest.m; sourceTree = "<group>"; };
-		FCB890B31EBB27F1007FF46A /* BGNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGNetwork.h; sourceTree = "<group>"; };
-		FCB890B41EBB27F1007FF46A /* BGNetworkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGNetworkCache.h; sourceTree = "<group>"; };
-		FCB890B51EBB27F1007FF46A /* BGNetworkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGNetworkCache.m; sourceTree = "<group>"; };
-		FCB890B61EBB27F1007FF46A /* BGNetworkConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGNetworkConfiguration.h; sourceTree = "<group>"; };
-		FCB890B71EBB27F1007FF46A /* BGNetworkConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGNetworkConfiguration.m; sourceTree = "<group>"; };
-		FCB890B81EBB27F1007FF46A /* BGNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGNetworkManager.h; sourceTree = "<group>"; };
-		FCB890B91EBB27F2007FF46A /* BGNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGNetworkManager.m; sourceTree = "<group>"; };
-		FCB890BA1EBB27F2007FF46A /* BGNetworkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGNetworkRequest.h; sourceTree = "<group>"; };
-		FCB890BB1EBB27F2007FF46A /* BGNetworkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGNetworkRequest.m; sourceTree = "<group>"; };
-		FCB890BC1EBB27F2007FF46A /* BGUploadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGUploadRequest.h; sourceTree = "<group>"; };
-		FCB890BD1EBB27F2007FF46A /* BGUploadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGUploadRequest.m; sourceTree = "<group>"; };
-		FCB890BE1EBB27F2007FF46A /* BGUtilFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGUtilFunction.h; sourceTree = "<group>"; };
-		FCB890BF1EBB27F2007FF46A /* BGUtilFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGUtilFunction.m; sourceTree = "<group>"; };
 		FCB890CE1EBB2C27007FF46A /* JKBGNetworkConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKBGNetworkConfiguration.h; sourceTree = "<group>"; };
 		FCB890CF1EBB2C27007FF46A /* JKBGNetworkConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKBGNetworkConfiguration.m; sourceTree = "<group>"; };
 		FCB8911C1EBC8D27007FF46A /* JKInternetSettingRequst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKInternetSettingRequst.h; sourceTree = "<group>"; };
 		FCB8911D1EBC8D27007FF46A /* JKInternetSettingRequst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKInternetSettingRequst.m; sourceTree = "<group>"; };
+		FCC0283E1ECAAA7D00C14FB5 /* BGAFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGAFHTTPClient.h; sourceTree = "<group>"; };
+		FCC0283F1ECAAA7D00C14FB5 /* BGAFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAFHTTPClient.m; sourceTree = "<group>"; };
+		FCC028401ECAAA7D00C14FB5 /* BGAFRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGAFRequestSerializer.h; sourceTree = "<group>"; };
+		FCC028411ECAAA7D00C14FB5 /* BGAFRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAFRequestSerializer.m; sourceTree = "<group>"; };
+		FCC028421ECAAA7D00C14FB5 /* BGAFResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGAFResponseSerializer.h; sourceTree = "<group>"; };
+		FCC028431ECAAA7D00C14FB5 /* BGAFResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAFResponseSerializer.m; sourceTree = "<group>"; };
+		FCC028441ECAAA7D00C14FB5 /* BGBatchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGBatchRequest.h; sourceTree = "<group>"; };
+		FCC028451ECAAA7D00C14FB5 /* BGBatchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGBatchRequest.m; sourceTree = "<group>"; };
+		FCC028461ECAAA7D00C14FB5 /* BGDownloadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGDownloadRequest.h; sourceTree = "<group>"; };
+		FCC028471ECAAA7D00C14FB5 /* BGDownloadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGDownloadRequest.m; sourceTree = "<group>"; };
+		FCC028481ECAAA7D00C14FB5 /* BGNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGNetwork.h; sourceTree = "<group>"; };
+		FCC028491ECAAA7D00C14FB5 /* BGNetworkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGNetworkCache.h; sourceTree = "<group>"; };
+		FCC0284A1ECAAA7D00C14FB5 /* BGNetworkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGNetworkCache.m; sourceTree = "<group>"; };
+		FCC0284B1ECAAA7D00C14FB5 /* BGNetworkConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGNetworkConfiguration.h; sourceTree = "<group>"; };
+		FCC0284C1ECAAA7D00C14FB5 /* BGNetworkConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGNetworkConfiguration.m; sourceTree = "<group>"; };
+		FCC0284D1ECAAA7D00C14FB5 /* BGNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGNetworkManager.h; sourceTree = "<group>"; };
+		FCC0284E1ECAAA7D00C14FB5 /* BGNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGNetworkManager.m; sourceTree = "<group>"; };
+		FCC0284F1ECAAA7D00C14FB5 /* BGNetworkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGNetworkRequest.h; sourceTree = "<group>"; };
+		FCC028501ECAAA7D00C14FB5 /* BGNetworkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGNetworkRequest.m; sourceTree = "<group>"; };
+		FCC028511ECAAA7D00C14FB5 /* BGUploadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGUploadRequest.h; sourceTree = "<group>"; };
+		FCC028521ECAAA7D00C14FB5 /* BGUploadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGUploadRequest.m; sourceTree = "<group>"; };
+		FCC028531ECAAA7D00C14FB5 /* BGUtilFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGUtilFunction.h; sourceTree = "<group>"; };
+		FCC028541ECAAA7D00C14FB5 /* BGUtilFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGUtilFunction.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,7 +171,7 @@
 		FC4AFE311EB0A89700C26CC7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				FCB890A81EBB27F1007FF46A /* JKBaseKit */,
+				FCC0283D1ECAAA7D00C14FB5 /* JKBaseKit */,
 				FC4AFE351EB0A89700C26CC7 /* AppDelegate.h */,
 				FC4AFE361EB0A89700C26CC7 /* AppDelegate.m */,
 				FCB890CE1EBB2C27007FF46A /* JKBGNetworkConfiguration.h */,
@@ -216,30 +219,32 @@
 			path = DemoUITests;
 			sourceTree = "<group>";
 		};
-		FCB890A81EBB27F1007FF46A /* JKBaseKit */ = {
+		FCC0283D1ECAAA7D00C14FB5 /* JKBaseKit */ = {
 			isa = PBXGroup;
 			children = (
-				FCB890A91EBB27F1007FF46A /* BGAFHTTPClient.h */,
-				FCB890AA1EBB27F1007FF46A /* BGAFHTTPClient.m */,
-				FCB890AD1EBB27F1007FF46A /* BGAFResponseSerializer.h */,
-				FCB890AE1EBB27F1007FF46A /* BGAFResponseSerializer.m */,
-				FCB890AF1EBB27F1007FF46A /* BGBatchRequest.h */,
-				FCB890B01EBB27F1007FF46A /* BGBatchRequest.m */,
-				FCB890B11EBB27F1007FF46A /* BGDownloadRequest.h */,
-				FCB890B21EBB27F1007FF46A /* BGDownloadRequest.m */,
-				FCB890B31EBB27F1007FF46A /* BGNetwork.h */,
-				FCB890B41EBB27F1007FF46A /* BGNetworkCache.h */,
-				FCB890B51EBB27F1007FF46A /* BGNetworkCache.m */,
-				FCB890B61EBB27F1007FF46A /* BGNetworkConfiguration.h */,
-				FCB890B71EBB27F1007FF46A /* BGNetworkConfiguration.m */,
-				FCB890B81EBB27F1007FF46A /* BGNetworkManager.h */,
-				FCB890B91EBB27F2007FF46A /* BGNetworkManager.m */,
-				FCB890BA1EBB27F2007FF46A /* BGNetworkRequest.h */,
-				FCB890BB1EBB27F2007FF46A /* BGNetworkRequest.m */,
-				FCB890BC1EBB27F2007FF46A /* BGUploadRequest.h */,
-				FCB890BD1EBB27F2007FF46A /* BGUploadRequest.m */,
-				FCB890BE1EBB27F2007FF46A /* BGUtilFunction.h */,
-				FCB890BF1EBB27F2007FF46A /* BGUtilFunction.m */,
+				FCC0283E1ECAAA7D00C14FB5 /* BGAFHTTPClient.h */,
+				FCC0283F1ECAAA7D00C14FB5 /* BGAFHTTPClient.m */,
+				FCC028401ECAAA7D00C14FB5 /* BGAFRequestSerializer.h */,
+				FCC028411ECAAA7D00C14FB5 /* BGAFRequestSerializer.m */,
+				FCC028421ECAAA7D00C14FB5 /* BGAFResponseSerializer.h */,
+				FCC028431ECAAA7D00C14FB5 /* BGAFResponseSerializer.m */,
+				FCC028441ECAAA7D00C14FB5 /* BGBatchRequest.h */,
+				FCC028451ECAAA7D00C14FB5 /* BGBatchRequest.m */,
+				FCC028461ECAAA7D00C14FB5 /* BGDownloadRequest.h */,
+				FCC028471ECAAA7D00C14FB5 /* BGDownloadRequest.m */,
+				FCC028481ECAAA7D00C14FB5 /* BGNetwork.h */,
+				FCC028491ECAAA7D00C14FB5 /* BGNetworkCache.h */,
+				FCC0284A1ECAAA7D00C14FB5 /* BGNetworkCache.m */,
+				FCC0284B1ECAAA7D00C14FB5 /* BGNetworkConfiguration.h */,
+				FCC0284C1ECAAA7D00C14FB5 /* BGNetworkConfiguration.m */,
+				FCC0284D1ECAAA7D00C14FB5 /* BGNetworkManager.h */,
+				FCC0284E1ECAAA7D00C14FB5 /* BGNetworkManager.m */,
+				FCC0284F1ECAAA7D00C14FB5 /* BGNetworkRequest.h */,
+				FCC028501ECAAA7D00C14FB5 /* BGNetworkRequest.m */,
+				FCC028511ECAAA7D00C14FB5 /* BGUploadRequest.h */,
+				FCC028521ECAAA7D00C14FB5 /* BGUploadRequest.m */,
+				FCC028531ECAAA7D00C14FB5 /* BGUtilFunction.h */,
+				FCC028541ECAAA7D00C14FB5 /* BGUtilFunction.m */,
 			);
 			path = JKBaseKit;
 			sourceTree = "<group>";
@@ -428,22 +433,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCB890C61EBB27F2007FF46A /* BGDownloadRequest.m in Sources */,
+				FCC028591ECAAA7D00C14FB5 /* BGDownloadRequest.m in Sources */,
 				FC4AFE3A1EB0A89700C26CC7 /* ViewController.m in Sources */,
-				FCB890C91EBB27F2007FF46A /* BGNetworkManager.m in Sources */,
-				FCB890C51EBB27F2007FF46A /* BGBatchRequest.m in Sources */,
 				FC7DACE11EC2CED000E16C5D /* JKPharmacListByCategoryRequest.m in Sources */,
+				FCC0285C1ECAAA7D00C14FB5 /* BGNetworkManager.m in Sources */,
+				FCC028571ECAAA7D00C14FB5 /* BGAFResponseSerializer.m in Sources */,
+				FCC0285A1ECAAA7D00C14FB5 /* BGNetworkCache.m in Sources */,
+				FCC0285F1ECAAA7D00C14FB5 /* BGUtilFunction.m in Sources */,
+				FCC028551ECAAA7D00C14FB5 /* BGAFHTTPClient.m in Sources */,
 				FCB8911E1EBC8D27007FF46A /* JKInternetSettingRequst.m in Sources */,
+				FCC028561ECAAA7D00C14FB5 /* BGAFRequestSerializer.m in Sources */,
+				FCC0285D1ECAAA7D00C14FB5 /* BGNetworkRequest.m in Sources */,
+				FCC028581ECAAA7D00C14FB5 /* BGBatchRequest.m in Sources */,
 				FC4AFE371EB0A89700C26CC7 /* AppDelegate.m in Sources */,
-				FCB890C21EBB27F2007FF46A /* BGAFHTTPClient.m in Sources */,
-				FCB890CB1EBB27F2007FF46A /* BGUploadRequest.m in Sources */,
-				FCB890CC1EBB27F2007FF46A /* BGUtilFunction.m in Sources */,
-				FCB890C81EBB27F2007FF46A /* BGNetworkConfiguration.m in Sources */,
+				FCC0285B1ECAAA7D00C14FB5 /* BGNetworkConfiguration.m in Sources */,
 				FCB890D01EBB2C27007FF46A /* JKBGNetworkConfiguration.m in Sources */,
-				FCB890C71EBB27F2007FF46A /* BGNetworkCache.m in Sources */,
 				FC7DACE41EC2D49600E16C5D /* JKDrugSearchRequest.m in Sources */,
-				FCB890CA1EBB27F2007FF46A /* BGNetworkRequest.m in Sources */,
-				FCB890C41EBB27F2007FF46A /* BGAFResponseSerializer.m in Sources */,
+				FCC0285E1ECAAA7D00C14FB5 /* BGUploadRequest.m in Sources */,
 				FC4AFE341EB0A89700C26CC7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

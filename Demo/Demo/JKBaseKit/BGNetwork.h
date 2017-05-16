@@ -10,6 +10,7 @@
 #define BGNetwork_h
 
 #import "BGNetworkManager.h"
+#import "BGAFRequestSerializer.h"
 #import "BGAFResponseSerializer.h"
 #import "BGBatchRequest.h"
 

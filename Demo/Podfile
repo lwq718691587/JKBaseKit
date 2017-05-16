@@ -1,5 +1,3 @@
 target ‘Demo’ do
 pod 'JKBaseKit'
-pod 'SVProgressHUD'
-
 end

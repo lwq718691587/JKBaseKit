@@ -9,14 +9,14 @@
 #import "BGAFResponseSerializer.h"
 
 @implementation BGAFResponseSerializer
-
 - (instancetype)init {
     self = [super init];
     if (!self) {
         return nil;
     }
-    self.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/json",@"text/javascript",@"text/html",@"text/plain",@"application/xml",nil];
+    
+    self.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"application/xml",@"text/xml",@"text/html",@"text/plain",nil];
+    
     return self;
 }
-
 @end

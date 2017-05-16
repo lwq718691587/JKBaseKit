@@ -74,7 +74,12 @@ typedef void(^BGNetworkFailureBlock)(BGNetworkRequest * _Nonnull request, NSErro
 /**
  *  方法名
  */
-@property (nonatomic, strong) NSString * _Nonnull methodName;
+@property (nonatomic, strong) NSString * _Nonnull  methodName;
+
+/**
+ 服务器是否是接受json类型的参数  默认为yes
+ */
+@property (nonatomic, assign) BOOL                 isJsonParamType;
 
 /**
  *  HTTP请求的方法，默认GET，现支持GET和POST

@@ -9,7 +9,7 @@
 #import "BGNetworkManager.h"
 #import "BGUtilFunction.h"
 #import "BGAFHTTPClient.h"
-
+#import "BGAFRequestSerializer.h"
 #import "BGAFResponseSerializer.h"
 
 static inline NSString *BGURLStringFromBaseURLAndMethod(NSURL *baseURL, NSString *methodName) {
@@ -44,7 +44,7 @@ static id BGParseJsonData(id jsonData){
 
 static BGNetworkManager *_manager = nil;
 
-@interface BGNetworkManager ()
+@interface BGNetworkManager ()<BGAFRequestSerializerDelegate>
 @property (nonatomic, strong) BGAFHTTPClient *httpClient;
 @property (nonatomic, strong) BGNetworkCache *cache;
 @property (nonatomic, strong) dispatch_queue_t dataHandleQueue;
@@ -330,7 +330,6 @@ static BGNetworkManager *_manager = nil;
     NSParameterAssert(configuration.baseURLString);
     //AFHTTPClient
     _httpClient = [[BGAFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:configuration.baseURLString]];
-    
     AFSecurityPolicy *policy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate];
     //是否允许CA不信任的证书通过
     policy.allowInvalidCertificates = YES;
@@ -339,20 +338,15 @@ static BGNetworkManager *_manager = nil;
     _httpClient.securityPolicy = policy;
     
     //请求的序列化器
-    AFHTTPRequestSerializer *requestSerializer = [AFHTTPRequestSerializer serializer];
-    
-    if (configuration.headerDic.allKeys.count != 0) {
-        [configuration.headerDic enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-           [requestSerializer setValue:obj forHTTPHeaderField:key];
-        }];
-    }
+    BGAFRequestSerializer *requestSerializer = [BGAFRequestSerializer serializer];
+    requestSerializer.delegate = self;
     
     //响应的序列化器
     BGAFResponseSerializer *responseSerializer = [BGAFResponseSerializer serializer];
     
     //设置
     _httpClient.requestSerializer = requestSerializer;
-    _httpClient.requestSerializer.timeoutInterval = configuration.NetworkTimeoutInterval;
+    _httpClient.requestSerializer.timeoutInterval = 10;
     _httpClient.responseSerializer = responseSerializer;
     
     self.baseURL = [NSURL URLWithString:configuration.baseURLString];
@@ -466,5 +460,43 @@ static BGNetworkManager *_manager = nil;
 }
 
 #pragma mark - BGAFRequestSerializerDelegate
-
+- (NSURLRequest *)requestSerializer:(BGAFRequestSerializer *)requestSerializer request:(NSURLRequest *)request withParameters:(id)parameters error:(NSError *__autoreleasing *)error{
+    NSParameterAssert(request);
+    // NOTE:MutableRequest
+    NSMutableURLRequest *mutableRequest = [request mutableCopy];
+    
+    // NOTE:RequestHeader
+    //取出请求
+    BGNetworkRequest *networkRequest = self.tempRequestDic[request.URL.absoluteString];
+    NSDictionary *httpRequestHeaderDic = [self.configuration requestHTTPHeaderFields:networkRequest];
+    [httpRequestHeaderDic enumerateKeysAndObjectsUsingBlock:^(id field, id value, BOOL * __unused stop) {
+        if (![request valueForHTTPHeaderField:field]) {
+            [mutableRequest setValue:value forHTTPHeaderField:field];
+        }
+    }];
+    
+    if (![mutableRequest valueForHTTPHeaderField:@"Content-Type"]) {
+        [mutableRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    }
+    
+    //NOTE:URL QueryString
+    NSString *queryString = [self.configuration queryStringForURLWithRequest:networkRequest];
+    if(queryString){
+        mutableRequest.URL = [NSURL URLWithString:[[mutableRequest.URL absoluteString] stringByAppendingFormat:mutableRequest.URL.query ? @"&%@" : @"?%@", queryString]];
+    }
+    
+    //NOTE:HTTP GET or POST method
+    if ([requestSerializer.HTTPMethodsEncodingParametersInURI containsObject:[[request HTTPMethod] uppercaseString]]) {
+        //GET请求
+    }
+    else{
+        //NOTE:HTTP Body Data
+        NSData *bodyData = [self.configuration httpBodyDataWithRequest:networkRequest];
+        if(bodyData){
+            [mutableRequest setHTTPBody:bodyData];
+        }
+    }
+    
+    return [mutableRequest copy];
+}
 @end
