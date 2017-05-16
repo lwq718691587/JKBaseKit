@@ -8,6 +8,8 @@
 
 #import <SVProgressHUD/SVProgressHUD.h>
 
+#import "AdditionalHeader.h"
+
 @interface SVProgressHUD (Additonal)
 
 + (void)jk_show;
