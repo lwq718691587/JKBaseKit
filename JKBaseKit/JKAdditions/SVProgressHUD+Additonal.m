@@ -8,11 +8,14 @@
 
 #import "SVProgressHUD+Additonal.h"
 
+
+#define KeyWindow2017_5_16    [[UIApplication sharedApplication] keyWindow]
+
 @implementation SVProgressHUD (Additonal)
 
 
 + (void)jk_show{
-    [SVProgressHUD setOffsetFromCenter:UIOffsetMake(KeyWindow.width/2, KeyWindow.height/2)];
+    [SVProgressHUD setOffsetFromCenter:UIOffsetMake(KeyWindow2017_5_16.width/2, KeyWindow2017_5_16.height/2)];
     [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeNone];
     [SVProgressHUD setDefaultAnimationType:SVProgressHUDAnimationTypeFlat];
@@ -24,7 +27,7 @@
 }
 
 + (void)jk_showSuccessWithStatus:(NSString *)status{
-    [SVProgressHUD setOffsetFromCenter:UIOffsetMake(KeyWindow.width/2, KeyWindow.height/2)];
+    [SVProgressHUD setOffsetFromCenter:UIOffsetMake(KeyWindow2017_5_16.width/2, KeyWindow2017_5_16.height/2)];
     [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeNone];
     [SVProgressHUD setDefaultAnimationType:SVProgressHUDAnimationTypeFlat];
@@ -33,7 +36,7 @@
 }
 
 + (void)jk_showErrorWithStatus:(NSString *)status{
-    [SVProgressHUD setOffsetFromCenter:UIOffsetMake(KeyWindow.width/2, KeyWindow.height/2)];
+    [SVProgressHUD setOffsetFromCenter:UIOffsetMake(KeyWindow2017_5_16.width/2, KeyWindow2017_5_16.height/2)];
     [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeNone];
     [SVProgressHUD setDefaultAnimationType:SVProgressHUDAnimationTypeFlat];
