@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Aspects.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>DateTools.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -54,6 +59,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>YYModel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -62,12 +72,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2594E874FC89DB7831D23F6984893B83</key>
+		<key>09B67F8F810E3FCEB62574E1E1830415</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5B38B6AED086724358A9A8D1B4700F03</key>
+		<key>2B8833832A232E5A05635EDF32907FC8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2D9231DD733481594BD64E942D30A4FF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4FC4ECC916F5CE0DB57675BEB199CBAB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -77,12 +97,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A4F8471D34ED0723AC542CED036C0F5D</key>
+		<key>88276748BCE9DC373BC1B751A9CC9437</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BB5B0097F46CCB686FAAE2AC683137C4</key>
+		<key>8FE394C39AC89A793C75CF8D2E6C8643</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B9F7E2BD493F0EBE937FDF8C68D54AF4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,17 +117,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>C93582A893B8DEC2BD8B269649A1C850</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>CF671F7E57B92905F1CC91D036D6B4A7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EB19868167C22DA0BB58F55C9C42A4E6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F75F7B6F2ED858DC8F91765B9E337914</key>
 		<dict>
 			<key>primary</key>
 			<true/>
