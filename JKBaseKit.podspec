@@ -13,11 +13,10 @@ s.dependency 'DateTools'
 s.dependency 'MJRefresh'
 s.dependency 'IQKeyboardManager'
 s.dependency 'SDWebImage'
-
 s.dependency 'JKNetWorking'
 s.dependency 'Aspects'
 s.dependency 'YYModel'
-
+s.dependency 'Masonry'
 s.public_header_files = 'JKBaseKit/JKBaseKit.h'
 s.source_files = 'JKBaseKit/JKBaseKit.h'
 
