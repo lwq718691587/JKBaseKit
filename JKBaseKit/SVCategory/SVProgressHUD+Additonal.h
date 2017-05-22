@@ -8,7 +8,6 @@
 
 #import <SVProgressHUD/SVProgressHUD.h>
 
-#import "JKBaseKit.h"
 
 @interface SVProgressHUD (Additonal)
 

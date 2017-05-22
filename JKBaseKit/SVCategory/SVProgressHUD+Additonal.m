@@ -8,6 +8,7 @@
 
 #import "SVProgressHUD+Additonal.h"
 
+#import "JKBaseKit.h"
 
 #define KeyWindow2017_5_16    [[UIApplication sharedApplication] keyWindow]
 
