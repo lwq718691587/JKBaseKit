@@ -26,6 +26,7 @@ end
 
 s.subspec 'SVCategory' do |ss|
     ss.dependency 'SVProgressHUD'
+    ss.dependency 'JKBaseKit/BaseUICategory'
     ss.source_files = "JKBaseKit/SVCategory","*.{h,m}"
 end
 
