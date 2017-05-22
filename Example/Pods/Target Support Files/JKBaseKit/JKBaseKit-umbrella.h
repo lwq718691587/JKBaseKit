@@ -13,6 +13,7 @@
 #import "JKBaseKit.h"
 #import "UIView+Additional.h"
 #import "SVProgressHUD+Additonal.h"
+#import "UIViewController+JKUmeng.h"
 
 FOUNDATION_EXPORT double JKBaseKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char JKBaseKitVersionString[];

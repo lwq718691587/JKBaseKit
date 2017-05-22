@@ -7,26 +7,26 @@
 //
 
 #import "UIViewController+JKUmeng.h"
-#import <UMMobClick/MobClick.h>
-#import <Aspects.h>
+//#import <UMMobClick/MobClick.h>
+//#import <Aspects.h>
 @implementation UIViewController (JKUmeng)
 
 
 
-+(void)load{
-    
-    UMConfigInstance.appKey = UmengAppKey;
-    [MobClick startWithConfigure:UMConfigInstance];
-    [MobClick setAppVersion:kSoftwareVersion_2017_5_19];
-    
-    [UIViewController aspect_hookSelector:@selector(viewDidAppear:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo){
-        [MobClick beginLogPageView:NSStringFromClass([aspectInfo.instance class])];;
-    } error:nil];
-    
-    [UIViewController aspect_hookSelector:@selector(viewDidDisappear:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo){
-        [MobClick endLogPageView:NSStringFromClass([aspectInfo.instance class])];
-    } error:nil];
-    
-}
+//+(void)load{
+//    
+//    UMConfigInstance.appKey = UmengAppKey;
+//    [MobClick startWithConfigure:UMConfigInstance];
+//    [MobClick setAppVersion:kSoftwareVersion_2017_5_19];
+//    
+//    [UIViewController aspect_hookSelector:@selector(viewDidAppear:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo){
+//        [MobClick beginLogPageView:NSStringFromClass([aspectInfo.instance class])];;
+//    } error:nil];
+//    
+//    [UIViewController aspect_hookSelector:@selector(viewDidDisappear:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo){
+//        [MobClick endLogPageView:NSStringFromClass([aspectInfo.instance class])];
+//    } error:nil];
+//    
+//}
 
 @end

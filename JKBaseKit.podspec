@@ -31,7 +31,6 @@ s.subspec 'SVCategory' do |ss|
 end
 
 s.subspec 'Umeng' do |ss|
-    ss.dependency 'UMengAnalytics'
     ss.source_files = "JKBaseKit/Umeng","*.{h,m}"
 end
 

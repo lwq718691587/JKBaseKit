@@ -16,9 +16,6 @@
     "ios": "8.0"
   },
   "dependencies": {
-    "AFNetworking": [
-
-    ],
     "DateTools": [
 
     ],
@@ -29,9 +26,6 @@
 
     ],
     "SDWebImage": [
-
-    ],
-    "SVProgressHUD": [
 
     ],
     "JKNetWorking": [
@@ -56,8 +50,20 @@
     },
     {
       "name": "SVCategory",
+      "dependencies": {
+        "SVProgressHUD": [
+
+        ]
+      },
       "source_files": [
         "JKBaseKit/SVCategory",
+        "*.{h,m}"
+      ]
+    },
+    {
+      "name": "Umeng",
+      "source_files": [
+        "JKBaseKit/Umeng",
         "*.{h,m}"
       ]
     }
