@@ -1,0 +1,1 @@
+../../../../../JKBaseKit/FastCoder/NSObject+StareValeu.h
