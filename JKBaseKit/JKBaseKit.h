@@ -18,6 +18,6 @@
 #import "IQKeyboardManager.h"
 #import "YYModel.h"
 #import "UIView+Additional.h"
-#import "SVProgressHUD+Additonal.h"
+
 
 #endif /* JKBaseKit_h */

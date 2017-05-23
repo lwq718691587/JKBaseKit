@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DFE134B4A88B9348AD09C5BB6681F5BF'
+               BlueprintIdentifier = 'FD9B1DF8CD2A48D33E0F9B3A45ACEEA3'
                BlueprintName = 'JKBaseKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'JKBaseKit.framework'>
+               BuildableName = 'libJKBaseKit.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

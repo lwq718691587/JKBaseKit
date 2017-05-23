@@ -1,4 +1,4 @@
-use_frameworks!
+
 
 target 'JKBaseKit_Example' do
   pod 'JKBaseKit', :path => '../JKBaseKit.podspec'
