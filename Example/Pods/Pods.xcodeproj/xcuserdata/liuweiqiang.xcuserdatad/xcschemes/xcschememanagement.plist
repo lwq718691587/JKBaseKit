@@ -9,37 +9,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Aspects.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>DateTools.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>IQKeyboardManager.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>JKBaseKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>JKNetWorking.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>MJRefresh.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Masonry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -67,7 +42,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>29AE46CB25BF9CA8E360411D8BA52286</key>
+		<key>2816C9CFBA8DD88416D451F69351D416</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>39B6F93C23EA2F0DE7700CDF79781F19</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -77,52 +57,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5E202C3A56BBAA3921793C97F528E1BB</key>
+		<key>5CF442D9B94BD2A48AF4D38F7D06597E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>69845B6607F38F0524414E26DDBF27EF</key>
+		<key>63DF3CA5389D06D8B1122BEBFDD72C5E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>84042E5AE234B08DD59DF2B695E9E2DD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9650B5ADCE86F1A055FAFC635284BDB5</key>
+		<key>8DE4AD9872F22A2BEE8C73B78E6818EA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>9E033EDB5EC0819481B0546434FA577B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B36F6D48026E14827529F787D63D61B8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C7C5FD310966070D9553E5B95C59641B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C9443867AD6691464030C2E8CBEFA7BB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DD56FFCB50BEDEC3D405FF2A78C09AB2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E5928B003C356C40C4ED247B1596D245</key>
 		<dict>
 			<key>primary</key>
 			<true/>

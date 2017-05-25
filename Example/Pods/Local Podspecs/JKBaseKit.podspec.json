@@ -1,6 +1,6 @@
 {
   "name": "JKBaseKit",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "license": "MIT",
   "summary": "Simple APP Kit",
   "homepage": "https://github.com/lwq718691587/JKBaseKit",
@@ -9,48 +9,26 @@
   },
   "source": {
     "git": "https://github.com/lwq718691587/JKBaseKit.git",
-    "tag": "1.1.8"
+    "tag": "1.1.9"
   },
   "requires_arc": true,
   "platforms": {
     "ios": "8.0"
   },
   "dependencies": {
-    "DateTools": [
-
-    ],
-    "MJRefresh": [
-
-    ],
-    "IQKeyboardManager": [
-
-    ],
     "SDWebImage": [
 
     ],
     "JKNetWorking": [
 
     ],
-    "Aspects": [
-
-    ],
     "YYModel": [
-
-    ],
-    "Masonry": [
 
     ]
   },
   "public_header_files": "JKBaseKit/JKBaseKit.h",
   "source_files": "JKBaseKit/JKBaseKit.h",
   "subspecs": [
-    {
-      "name": "JKUICategory",
-      "source_files": [
-        "JKBaseKit/JKUICategory",
-        "*.{h,m}"
-      ]
-    },
     {
       "name": "FastCoder",
       "source_files": [
@@ -62,13 +40,6 @@
       "name": "JKNSCategory",
       "source_files": [
         "JKBaseKit/JKNSCategory",
-        "*.{h,m}"
-      ]
-    },
-    {
-      "name": "Segment",
-      "source_files": [
-        "JKBaseKit/Segment",
         "*.{h,m}"
       ]
     },
