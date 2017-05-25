@@ -26,8 +26,5 @@ s.subspec 'JKNSCategory' do |ss|
     ss.source_files = "JKBaseKit/JKNSCategory","*.{h,m}"
 end
 
-s.subspec 'FunMacro' do |ss|
-    ss.source_files = "JKBaseKit/FunMacro","*.{h,m}"
-end
 
 end
