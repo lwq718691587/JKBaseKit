@@ -15,7 +15,7 @@ s.dependency 'JKNetWorking'
 s.dependency 'YYModel'
 
 s.public_header_files = 'JKBaseKit/JKBaseKit.h'
-s.source_files = 'JKBaseKit/JKBaseKit.h'
+s.source_files = 'JKBaseKit'，"*.{h,m}"
 
 
 s.subspec 'FastCoder' do |ss|
