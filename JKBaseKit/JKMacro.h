@@ -10,6 +10,4 @@
 #define JKMacro_h
 
 
-
-
 #endif /* JKMacro_h */
