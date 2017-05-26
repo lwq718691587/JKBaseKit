@@ -13,7 +13,7 @@
 #import "UIButton+WebCache.h"
 #import "UIImageView+WebCache.h"
 #import "YYModel.h"
-#import "JKSystemMacro.h"
+#import "JKBaseKitMacro.h"
 #import "NSObject+StareValeu.h"
 
 

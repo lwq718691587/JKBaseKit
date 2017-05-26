@@ -1,14 +1,13 @@
 //
-//  JKMacro.h
-//  JKBaseKit
+//  JKBaseKitMacro.h
+//  Pods
 //
-//  Created by A on 2017/5/25.
-//  Copyright © 2017年 liuweiqiang. All rights reserved.
+//  Created by 刘伟强 on 2017/5/26.
+//
 //
 
-#ifndef JKMacro_h
-#define JKMacro_h
-
+#ifndef JKBaseKitMacro_h
+#define JKBaseKitMacro_h
 
 /// NSBundle
 /** 当前系统版本 */
@@ -33,6 +32,4 @@
 #define jkRect(origin, w, h) ((CGRect){.origin = origin, .size = { w, h}})
 #define jkRect(x, y, size)   ((CGRect){.origin = {x, y}, .size = size})
 
-
-
-#endif /* JKMacro_h */
+#endif /* JKBaseKitMacro_h */
