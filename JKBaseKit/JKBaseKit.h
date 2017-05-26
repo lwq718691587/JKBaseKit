@@ -15,7 +15,6 @@
 #import "YYModel.h"
 #import "JKBaseKitMacro.h"
 #import "NSObject+StareValeu.h"
-
 #import "NSString+MD5.h"
 #import "NSString+URL.h"
 #import "NSString+Regex.h"
