@@ -36,7 +36,7 @@
 
 
 /// UserDefaults
-#define UserDefaults(object, key)    [[NSUserDefaults standardUserDefaults] setObject:@"object" forKey:@"key"]; \
+#define UserDefaults(object, key)    [[NSUserDefaults standardUserDefaults] setObject:object forKey:key]; \
                                      [[NSUserDefaults standardUserDefaults] synchronize];
 #define UerDefaults(key)             [[NSUserDefaults standardUserDefaults] objectForKey:key];
 
@@ -48,7 +48,7 @@
 /// Block
 #define jkBLOCK_EXE(block)  if(block) {__VA_ARGS__};
 
-/// GCD
+/// GCD                         Source: SDWebImage-SDWebImageCompat
 #define jkDispatch_main_safe(block, isSync)   \
 if ([NSThread isMainThread]) {                \
      jkBlock(block);                          \
@@ -60,6 +60,7 @@ if ([NSThread isMainThread]) {                \
     }                                          \
 }
 
+/// VariableGrgument
 #define jkVariableGrgument(value , string )    \
 do {                                           \
     if (value != nil) {                        \
@@ -70,9 +71,18 @@ do {                                           \
     }                                          \
 } while (0)
 
-
 /// Rect
-#define jkRectSize(origin, w, h) ((CGRect){.origin = origin, .size = { w, h}})
-#define jkRectOrigin(x, y, size)   ((CGRect){.origin = {x, y}, .size = size})
+#define jkRectSize(origin, w, h)  ((CGRect){.origin = origin, .size = {w, h}})
+#define jkRectOrigin(x, y, size)  ((CGRect){.origin = {x, y}, .size = size})
+
+/// Document Path
+#define jkDocument NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0]
+
+
+/// Throw
+#define jkThrow(msg) [NSException exceptionWithName:NSInternalInconsistencyException reason:msg userInfo: nil];
+
+/// Throw Must Override         Source: Masonry-MASConstraint
+#define jkThrowMethodNotImplemented  jkThrow( [NSString stringWithFormat:@"You must override %@ in a subclass.", NSStringFromSelector(_cmd)])
 
 #endif /* JKBaseKitMacro_h */
