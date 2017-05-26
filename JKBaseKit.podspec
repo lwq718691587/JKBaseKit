@@ -14,23 +14,22 @@ s.dependency 'SDWebImage'
 s.dependency 'JKNetWorking'
 s.dependency 'YYModel'
 
-#s.source_files = 'JKBaseKit/**/*'
+s.source_files = 'JKBaseKit/**/*'
+
+#s.public_header_files = 'JKBaseKit/JKBaseKit.h'
+#s.source_files = 'JKBaseKit/JKBaseKit.h'
+
+#s.subspec 'FastCoder' do |ss|
+#    ss.source_files = "JKBaseKit/FastCoder","*.{h,m}"
+#end
 
 
+#s.subspec 'JKMacro' do |ss|
+# ss.source_files = "JKBaseKit/JKMacro","*.{h,m}"
+#end
 
-s.public_header_files = 'JKBaseKit/JKBaseKit.h'
-s.source_files = 'JKBaseKit/JKBaseKit.h'
-
-s.subspec 'FastCoder' do |ss|
-    ss.source_files = "JKBaseKit/FastCoder","*.{h,m}"
-end
-
-s.subspec 'JKMacro' do |ss|
- ss.source_files = "JKBaseKit/JKMacro","*.{h,m}"
-end
-
-s.subspec 'JKNSCategory' do |ss|
- ss.source_files = "JKBaseKit/JKNSCategory","*.{h,m}"
-end
+#s.subspec 'JKNSCategory' do |ss|
+# ss.source_files = "JKBaseKit/JKNSCategory","*.{h,m}"
+#end
 
 end
