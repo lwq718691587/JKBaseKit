@@ -26,25 +26,5 @@
 
     ]
   },
-  "public_header_files": "JKBaseKit/JKBaseKit.h",
-  "source_files": [
-    "JKBaseKit",
-    "*.{h,m}"
-  ],
-  "subspecs": [
-    {
-      "name": "FastCoder",
-      "source_files": [
-        "JKBaseKit/FastCoder",
-        "*.{h,m}"
-      ]
-    },
-    {
-      "name": "JKNSCategory",
-      "source_files": [
-        "JKBaseKit/JKNSCategory",
-        "*.{h,m}"
-      ]
-    }
-  ]
+  "source_files": "JKBaseKit/**/*"
 }
