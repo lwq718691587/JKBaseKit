@@ -20,11 +20,8 @@
 {
     [super viewDidLoad];
     
-    
     NSLog(@"A aAAAAAAA-tes");
     
-    
-    CGRect rect = (CGRect){.origin = {0,0}, .size = {0, 0}};
     
     // Do any additional setup after loading the view, typically from a nib.
 }
