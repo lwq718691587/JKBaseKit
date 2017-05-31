@@ -36,9 +36,9 @@
 
 
 /// UserDefaults
-#define UserDefaults(object, key)    [[NSUserDefaults standardUserDefaults] setObject:object forKey:key]; \
-                                     [[NSUserDefaults standardUserDefaults] synchronize];
-#define UerDefaults(key)             [[NSUserDefaults standardUserDefaults] objectForKey:key];
+#define jkUserDefaults(object, key)    [[NSUserDefaults standardUserDefaults] setObject:object forKey:key]; \
+                                       [[NSUserDefaults standardUserDefaults] synchronize];
+#define jkUerDefaults(key)             [[NSUserDefaults standardUserDefaults] objectForKey:key];
 
 
 /// NSDictionary
