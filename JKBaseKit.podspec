@@ -10,9 +10,9 @@ s.requires_arc = true
 s.ios.deployment_target = '8.0'
 
 
-s.dependency 'SDWebImage'
+s.dependency 'SDWebImage', '~> 3.8.2'
 s.dependency 'JKNetWorking'
-s.dependency 'YYModel'
+s.dependency 'YYModel', '~> 1.0.4'
 
 s.source_files = 'JKBaseKit/**/*'
 
