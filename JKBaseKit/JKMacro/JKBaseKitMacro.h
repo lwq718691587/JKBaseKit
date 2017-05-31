@@ -22,6 +22,11 @@
 // 获取app的名称
 #define jkBundleDisplayName  ([[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"])
 
+// Xib Load
+#define jkLoadXib(name)         jkLoadXib(name, self, 0)
+#define jkLoadXib(name, index)  jkLoadXib(name, self, index)
+#define jkLoadXib(name, owner, index) [[NSBundle mainBundle] loadNibNamed:name owner:owner options:nil][index]
+
 
 /// NSLog
 #ifdef DEBUG
