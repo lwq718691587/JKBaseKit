@@ -13,7 +13,6 @@
 // 当前系统版本
 #define jkCurrentSystem      [[[UIDevice currentDevice] systemVersion] floatValue]
 
-
 /// NSBundle
 // 获取APP的版本号
 #define jkSoftwareVersion    ([[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"])

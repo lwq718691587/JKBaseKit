@@ -19,6 +19,6 @@
 #import "NSString+URL.h"
 #import "NSString+Regex.h"
 #import "NSString+Category.h"
-
+#import "NSObject+LoadPlist.h"
 
 #endif /* JKBaseKit_h */

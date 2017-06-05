@@ -1,6 +1,6 @@
 {
   "name": "JKBaseKit",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "license": "MIT",
   "summary": "Simple APP Kit",
   "homepage": "https://github.com/lwq718691587/JKBaseKit",
@@ -9,7 +9,7 @@
   },
   "source": {
     "git": "https://github.com/lwq718691587/JKBaseKit.git",
-    "tag": "1.2.0"
+    "tag": "1.2.2"
   },
   "requires_arc": true,
   "platforms": {
@@ -17,13 +17,13 @@
   },
   "dependencies": {
     "SDWebImage": [
-
+      "~> 3.8.2"
     ],
     "JKNetWorking": [
 
     ],
     "YYModel": [
-
+      "~> 1.0.4"
     ]
   },
   "source_files": "JKBaseKit/**/*"
