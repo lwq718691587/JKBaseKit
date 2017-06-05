@@ -1,16 +1,16 @@
 //
-//  NSObject+LoadPlist.m
+//  NSMutableDictionary+LoadPlist.m
 //  Pods
 //
 //  Created by 刘伟强 on 2017/6/5.
 //
 //
 
-#import "NSObject+LoadPlist.h"
+#import "NSMutableDictionary+LoadPlist.h"
 
-@implementation NSObject (LoadPlist)
+@implementation NSMutableDictionary (LoadPlist)
 
-+ (id) loadFromePlist:(NSString *)plistName withBundleClass:(id)bundleClass bundleName:(NSString *)bundleName;{
++ (id) loadFromePlist:(NSString *)plistName withBundleClass:(id)bundleClass bundleName:(NSString *)bundleName{
     
     NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle bundleForClass:[bundleClass class]] URLForResource:bundleName withExtension:@"bundle"]];
     NSString *plistPath = [bundle pathForResource:plistName ofType:@"plist"];
