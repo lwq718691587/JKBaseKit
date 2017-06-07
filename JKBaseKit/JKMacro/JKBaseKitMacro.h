@@ -45,12 +45,11 @@
 #define jkUerDefaults(key)             [[NSUserDefaults standardUserDefaults] objectForKey:key];
 
 
-/// NSDictionary
-#define jkDictObject(object)  (object == nil ? [NSNull null] : object)
-
+/// 非空对象处理
+#define jkObject(object)               (object != nil ? : [NSNull null])
 
 /// Block
-#define jkBLOCK_EXE(block)  if(block) {__VA_ARGS__};
+#define jkBLOCK_EXEC(block, ...)       if (block) { block(__VA_ARGS__); }
 
 /// GCD                         Source: SDWebImage-SDWebImageCompat
 #define jkDispatch_main_safe(block, isSync)   \
