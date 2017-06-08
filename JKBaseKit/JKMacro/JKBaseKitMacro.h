@@ -22,9 +22,9 @@
 #define jkBundleDisplayName  ([[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"])
 
 // Xib Load
-#define jkLoadXib(name)         jkLoadXib(name, self, 0)
-#define jkLoadXib(name, index)  jkLoadXib(name, self, index)
-#define jkLoadXib(name, owner, index) [[NSBundle mainBundle] loadNibNamed:name owner:owner options:nil][index]
+#define jkLoadXibWithName(name)         jkLoadXib(name, self, 0)
+#define jkLoadXibWithIndex(name, index) jkLoadXib(name, self, index)
+#define jkLoadXib(name, owner, index)   [[NSBundle mainBundle] loadNibNamed:name owner:owner options:nil][index]
 
 
 /// NSLog
@@ -52,13 +52,13 @@
 #define jkBLOCK_EXEC(block, ...)       if (block) { block(__VA_ARGS__); }
 
 /// GCD                         Source: SDWebImage-SDWebImageCompat
-#define jkDispatch_main_safe(block, isSync)   \
-if ([NSThread isMainThread]) {                \
-     jkBlock(block);                          \
-} else {                                      \
-    if (isSync) {                             \
+#define jkDispatch_main_safe(block, isSync)    \
+if ([NSThread isMainThread]) {                 \
+     jkBlock(block);                           \
+} else {                                       \
+    if (isSync) {                              \
         dispatch_sync(dispatch_get_main_queue(), block);  \
-    } else {                                  \
+    } else {                                   \
         dispatch_async(dispatch_get_main_queue(), block); \
     }                                          \
 }
