@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name = 'JKBaseKit'
-s.version = '1.2.4'
+s.version = '1.2.5'
 s.license = 'MIT'
 s.summary = 'Simple APP Kit'
 s.homepage = 'https://github.com/lwq718691587/JKBaseKit'
@@ -20,6 +20,7 @@ s.public_header_files = 'JKBaseKit/JKBaseKit.h'
 s.source_files = 'JKBaseKit/JKBaseKit.h'
 
 s.subspec 'FastCoder' do |ss|
+ss.requires_arc = false
 ss.source_files = "JKBaseKit/FastCoder","*.{h,m}"
 end
 
