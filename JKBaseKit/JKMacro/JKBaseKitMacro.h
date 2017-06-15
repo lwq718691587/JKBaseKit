@@ -63,6 +63,10 @@ if ([NSThread isMainThread]) {                 \
     }                                          \
 }
 
+/// 强制内联
+#define jk_inline __inline__ __attribute__((always_inline))
+
+
 /// VariableGrgument
 #define jkVariableGrgument(value , string )    \
 do {                                           \
