@@ -47,9 +47,9 @@
 #define jkBLOCK_EXEC(block, ...)       if (block) { block(__VA_ARGS__); }
 
 /// GCD                         Source: SDWebImage-SDWebImageCompat
-#define jkDispatch_main_safe(block, isSync)    \
+#define jkDispatch_main_safe(isSync, block)    \
 if ([NSThread isMainThread]) {                 \
-     jkBlock(block);                           \
+     block();                                  \
 } else {                                       \
     if (isSync) {                              \
         dispatch_sync(dispatch_get_main_queue(), block);  \
