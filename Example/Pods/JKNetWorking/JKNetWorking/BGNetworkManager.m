@@ -330,12 +330,12 @@ static BGNetworkManager *_manager = nil;
     NSParameterAssert(configuration.baseURLString);
     //AFHTTPClient
     _httpClient = [[BGAFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:configuration.baseURLString]];
-    AFSecurityPolicy *policy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate];
-    //是否允许CA不信任的证书通过
-    policy.allowInvalidCertificates = YES;
-    //是否验证主机名
-    policy.validatesDomainName = YES;
-    _httpClient.securityPolicy = policy;
+//    AFSecurityPolicy *policy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate];
+//    //是否允许CA不信任的证书通过
+//    policy.allowInvalidCertificates = YES;
+//    //是否验证主机名
+//    policy.validatesDomainName = YES;
+//    _httpClient.securityPolicy = policy;
     
     //请求的序列化器
     BGAFRequestSerializer *requestSerializer = [BGAFRequestSerializer serializer];
@@ -361,7 +361,6 @@ static BGNetworkManager *_manager = nil;
        businessFailure:(BGBusinessFailureBlock)businessFailureBlock{
     //remove temp request
     [self removeTempRequest:request];
-    
     dispatch_async(self.dataHandleQueue, ^{
         //对数据进行解密
         NSData *decryptData = [self.configuration decryptResponseData:responseData response:task.response request:request];
