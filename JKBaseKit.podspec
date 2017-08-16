@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name = 'JKBaseKit'
-s.version = '1.2.7'
+s.version = '1.2.8'
 s.license = 'MIT'
 s.summary = 'Simple APP Kit'
 s.homepage = 'https://github.com/lwq718691587/JKBaseKit'
@@ -9,10 +9,6 @@ s.source = { :git => "https://github.com/lwq718691587/JKBaseKit.git", :tag => s.
 s.requires_arc = true
 s.ios.deployment_target = '8.0'
 
-
-s.dependency 'SDWebImage', '3.8.2'
-s.dependency 'JKNetWorking','1.0.7'
-s.dependency 'YYModel', '1.0.4'
 
 #s.source_files = 'JKBaseKit/**/*'
 
