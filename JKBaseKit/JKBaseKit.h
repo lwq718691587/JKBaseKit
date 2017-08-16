@@ -9,10 +9,6 @@
 #ifndef JKBaseKit_h
 #define JKBaseKit_h
 
-
-#import "UIButton+WebCache.h"
-#import "UIImageView+WebCache.h"
-#import "YYModel.h"
 #import "JKBaseKitMacro.h"
 #import "NSObject+StareValeu.h"
 #import "NSString+MD5.h"
