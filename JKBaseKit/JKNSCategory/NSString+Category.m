@@ -57,5 +57,13 @@
     return newStr;
 }
 
++ (NSString *)getNowDateTimeInterval{
+    return [NSString stringWithFormat:@"%lld", (long long)(double)[[NSDate date] timeIntervalSince1970]];
+}
+
++ (NSString *)getDateTimeIntervalWithDate:(NSDate*)date{
+       return [NSString stringWithFormat:@"%lld", (long long)(double)[date timeIntervalSince1970]];
+}
+
 
 @end

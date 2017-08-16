@@ -22,4 +22,9 @@
 
 //电话号码中间4位****显示
 + (NSString*) getSecrectStringWithPhoneNumber:(NSString*)phoneNum;
+
++ (NSString *)getNowDateTimeInterval;
+
++ (NSString *)getDateTimeIntervalWithDate:(NSDate*)date;
+
 @end
