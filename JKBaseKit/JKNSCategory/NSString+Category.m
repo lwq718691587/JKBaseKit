@@ -8,6 +8,9 @@
 
 #import "NSString+Category.h"
 
+#import <AdSupport/ASIdentifierManager.h>
+#include <sys/utsname.h>
+
 @implementation NSString (Category)
 
 //去掉前后空格
@@ -63,6 +66,36 @@
 
 + (NSString *)getDateTimeIntervalWithDate:(NSDate*)date{
        return [NSString stringWithFormat:@"%lld", (long long)(double)[date timeIntervalSince1970]];
+}
+
+//获取用户的ADFA
++ (NSString *) getAdvertisingIdentifier {
+    return [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+}
+
+//获取当前设备的UDID
++ (NSString*)getCurrentDeviceUDID{
+    
+    NSString *uuid = [[[[UIDevice currentDevice] identifierForVendor] UUIDString] stringByReplacingOccurrencesOfString:@"-" withString:@""];
+    
+    return uuid;
+}
+
+//获取当前设备类型如ipod，iphone，ipad
++ (NSString *)deviceType {
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    
+    return [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+}
+
+- (NSString *)getBalanceStrFromeIntnetStr{
+    return [NSString stringWithFormat:@"%.2f",[self intValue]/100.f];
+}
+
+//电话号码中间4位****显示
+- (NSString *)getSecrectPhoneNumber{
+    return [NSString getSecrectStringWithPhoneNumber:self];
 }
 
 
