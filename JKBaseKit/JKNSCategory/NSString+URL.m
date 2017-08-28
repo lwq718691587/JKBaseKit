@@ -12,7 +12,7 @@
 
 - (NSString *)URLEncodedString{
     
-    NSString *charactersToEscape = @"!$&'()*+,-./:;=?@_~%#[]";
+    NSString *charactersToEscape = @"!$&'()*+,-./:;=?@_~%#[] ";
     NSCharacterSet *allowedCharacters = [[NSCharacterSet characterSetWithCharactersInString:charactersToEscape] invertedSet];
     NSString *encodedString = [self stringByAddingPercentEncodingWithAllowedCharacters:allowedCharacters];
     return encodedString;
