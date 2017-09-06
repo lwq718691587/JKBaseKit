@@ -60,6 +60,17 @@
     return newStr;
 }
 
+-(void)callPhone{
+    NSString *callPhone = [NSString stringWithFormat:@"telprompt://%@", self];
+    NSComparisonResult compare = [[UIDevice currentDevice].systemVersion compare:@"10.0"];
+    if (compare == NSOrderedDescending || compare == NSOrderedSame) {
+        /// 大于等于10.0系统使用此openURL方法
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callPhone] options:@{} completionHandler:nil];
+    } else {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callPhone]];
+    }
+}
+
 + (NSString *)getNowDateTimeInterval{
     return [NSString stringWithFormat:@"%lld", (long long)(double)[[NSDate date] timeIntervalSince1970]];
 }

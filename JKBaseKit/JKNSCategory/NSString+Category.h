@@ -26,6 +26,8 @@
 //电话号码中间4位****显示
 - (NSString *)getSecrectPhoneNumber;
 
+- (void)callPhone;
+
 //电话号码中间4位****显示
 + (NSString*) getSecrectStringWithPhoneNumber:(NSString*)phoneNum;
 
@@ -42,6 +44,7 @@
 
 //获取当前设备类型如ipod，iphone，ipad
 + (NSString *)deviceType;
+
 
 
 @end
