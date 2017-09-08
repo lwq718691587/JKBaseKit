@@ -31,12 +31,17 @@
 //电话号码中间4位****显示
 + (NSString*) getSecrectStringWithPhoneNumber:(NSString*)phoneNum;
 
-//当前时间戳
+//当前时间戳 单位秒
 + (NSString *)getNowDateTimeInterval;
-//获取NSDate的时间戳
+//获取NSDate的时间戳 单位秒
 + (NSString *)getDateTimeIntervalWithDate:(NSDate*)date;
 
-//获取用户的ADFA
+//当前时间戳 单位毫秒
++ (NSString *)getNowDateTimeInterval_ms;
+//获取NSDate的时间戳 单位 毫秒
++ (NSString *)getDateTimeIntervalWithDate_ms:(NSDate*)date;
+
+//获取用户的ADFA 单位毫秒
 + (NSString *) getAdvertisingIdentifier;
 
 //获取当前设备的UDID
