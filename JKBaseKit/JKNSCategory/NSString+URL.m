@@ -18,4 +18,11 @@
     return encodedString;
 }
 
+- (NSString *)URLEncodedString_full{
+    NSString *charactersToEscape = @"'\n'\"\{}!$&'()*+,-./:;=?@_~%#[] ";
+    NSCharacterSet *allowedCharacters = [[NSCharacterSet characterSetWithCharactersInString:charactersToEscape] invertedSet];
+    NSString *encodedString = [self stringByAddingPercentEncodingWithAllowedCharacters:allowedCharacters];
+    return encodedString;
+}
+
 @end

@@ -11,5 +11,7 @@
 @interface NSString (URL)
 
 - (NSString *)URLEncodedString; 
+// 包含转义 \n
+- (NSString *)URLEncodedString_full;
 
 @end
