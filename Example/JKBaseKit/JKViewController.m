@@ -22,6 +22,9 @@
     
     NSLog(@"%@",jkSoftwareVersion);
     
+    NSString *str = [NSString getDateString:@"1508408476000" format:@"YYYY-MM-dd HH:mm:ss"];
+    NSString *str2 = [NSString getTimestamp:@"2017-09-09 05:46" formatter:@"YYYY-MM-dd HH:mm"];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 

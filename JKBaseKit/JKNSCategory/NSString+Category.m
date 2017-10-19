@@ -119,4 +119,27 @@
 }
 
 
++ (NSString *)getDateString:(NSString *)timestamp
+                     format:(NSString *)format{
+    
+    NSTimeInterval time = [timestamp doubleValue]/1000;
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:time];
+    NSDateFormatter *dateFormater = [[NSDateFormatter alloc]init];
+    [dateFormater setDateFormat:format];
+    return [dateFormater stringFromDate:date];
+}
+
++(NSString *)getTimestamp:(NSString *)dateStr
+                formatter:(NSString *)formatter{
+    
+    NSDateFormatter *parser = [[NSDateFormatter alloc] init];
+    parser.dateStyle = NSDateFormatterNoStyle;
+    parser.timeStyle = NSDateFormatterNoStyle;
+    parser.timeZone = [NSTimeZone systemTimeZone];
+    parser.dateFormat = formatter;
+    NSDate *date = [parser dateFromString:dateStr];
+    
+    return [NSString getDateTimeIntervalWithDate_ms:date];
+}
+
 @end
