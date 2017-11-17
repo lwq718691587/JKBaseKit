@@ -1,1 +1,0 @@
-../../../JKNetWorking/JKNetWorking/BGUploadRequest.h

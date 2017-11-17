@@ -71,4 +71,26 @@
 +(NSString *)getTimestamp:(NSString *)dateStr
               formatter:(NSString *)formatter;
 
+
+/**
+ XXX 前
+ 规则： 距当前时间
+ 
+ 1小时内，显示为xx分钟前，如34分钟前
+ 
+ 1小时以上1天以内，显示为xx小时前，如2小时前
+ 
+ 1天以上2天以内的，显示：昨天
+ 
+ 间隔超过2天小于1年，显示：xx月xx日，如8月21日
+ 
+ 间隔超过1年小于2年，显示：去年
+ 
+ 间隔超过2年以上，显示：XXXX年，如2015年
+
+ @param timestamp 时间戳 毫秒
+ @return 字符串
+ */
++ (NSString *)agoTime:(double )timestamp;
+
 @end

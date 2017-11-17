@@ -4,17 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AFNetworking.xcscheme</key>
+		<key>DateTools.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>JKBaseKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>JKNetWorking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -29,54 +24,8 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SDWebImage.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>YYModel.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>0EB5E1049202DA98D7EA4444E2A22195</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>39B6F93C23EA2F0DE7700CDF79781F19</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3EB5336A331A76154FEB4B975EF5B4EE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6729E33D73F2CED1EF0AF0EC5AA8C002</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>87879C60B620CB978DA61F88F09A1A62</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>87C09C89C7496C62D75D0A84B7094C95</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9E033EDB5EC0819481B0546434FA577B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

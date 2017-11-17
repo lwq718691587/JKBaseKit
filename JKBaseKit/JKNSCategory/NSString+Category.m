@@ -11,6 +11,8 @@
 #import <AdSupport/ASIdentifierManager.h>
 #include <sys/utsname.h>
 
+#import <DateTools/DateTools.h>
+
 @implementation NSString (Category)
 
 //去掉前后空格
@@ -140,6 +142,30 @@
     NSDate *date = [parser dateFromString:dateStr];
     
     return [NSString getDateTimeIntervalWithDate_ms:date];
+}
+
+
++ (NSString *)agoTime:(double )timestamp{
+    
+    NSTimeInterval time = timestamp/1000;
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:time];
+    
+    NSInteger minutes = (NSInteger )[date minutesAgo];
+    
+    if (minutes <= 60) {
+        return [NSString stringWithFormat:@"%ld分钟前",minutes];
+    }else if (minutes > 60 && minutes <= 60 *24 ){
+        return [NSString stringWithFormat:@"%ld小时前",(NSInteger)[date hoursAgo]];
+    }else if (minutes > 60 * 24 && minutes <= 60 * 24 *2 ){
+        return @"昨天";
+    }else if (minutes > 60 * 24 * 2 && minutes <= 60 * 24 * 365 ){
+        return [NSString getDateString:[NSString stringWithFormat:@"%f",timestamp] format:@"MM月dd日"];
+    }else if (minutes > 60 * 24 * 365 && minutes <= 60 * 24 * 365 * 2){
+        return @"去年";
+    }else{
+        return [NSString getDateString:[NSString stringWithFormat:@"%f",timestamp] format:@"YYYY年"];
+    }
+    
 }
 
 @end
