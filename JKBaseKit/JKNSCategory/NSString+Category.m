@@ -152,7 +152,9 @@
     
     NSInteger minutes = (NSInteger )[date minutesAgo];
     
-    if (minutes <= 60) {
+    if (minutes == 0) {
+        return @"刚刚";
+    }else if (minutes <= 60) {
         return [NSString stringWithFormat:@"%ld分钟前",minutes];
     }else if (minutes > 60 && minutes <= 60 *24 ){
         return [NSString stringWithFormat:@"%ld小时前",(NSInteger)[date hoursAgo]];
