@@ -1,6 +1,6 @@
 {
   "name": "JKBaseKit",
-  "version": "1.3.4",
+  "version": "1.3.6",
   "license": "MIT",
   "summary": "Simple APP Kit",
   "homepage": "https://github.com/lwq718691587/JKBaseKit",
@@ -9,7 +9,7 @@
   },
   "source": {
     "git": "https://github.com/lwq718691587/JKBaseKit.git",
-    "tag": "1.3.4"
+    "tag": "1.3.6"
   },
   "requires_arc": true,
   "platforms": {

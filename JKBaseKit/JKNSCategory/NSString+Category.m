@@ -74,20 +74,20 @@
 }
 
 + (NSString *)getNowDateTimeInterval{
-    return [NSString stringWithFormat:@"%lld", (long long)(double)[[NSDate date] timeIntervalSince1970]];
+    return [NSString stringWithFormat:@"%lld", (long long)[[NSDate date] timeIntervalSince1970]];
 }
 
 + (NSString *)getDateTimeIntervalWithDate:(NSDate*)date{
-    return [NSString stringWithFormat:@"%lld", (long long)(double)[date timeIntervalSince1970]];
+    return [NSString stringWithFormat:@"%lld", (long long)[date timeIntervalSince1970]];
 }
 
 //当前时间戳 单位毫秒
 + (NSString *)getNowDateTimeInterval_ms{
-    return [NSString stringWithFormat:@"%lld", (long long)(double)[[NSDate date] timeIntervalSince1970] * 1000];
+    return [NSString stringWithFormat:@"%lld", (long long)([[NSDate date] timeIntervalSince1970] * 1000)];
 }
 //获取NSDate的时间戳 单位 毫秒
 + (NSString *)getDateTimeIntervalWithDate_ms:(NSDate*)date{
-    return [NSString stringWithFormat:@"%lld", (long long)(double)[date timeIntervalSince1970] * 1000];
+    return [NSString stringWithFormat:@"%lld", (long long)([date timeIntervalSince1970] * 1000)];
 }
 
 //获取用户的ADFA
