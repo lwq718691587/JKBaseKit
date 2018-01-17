@@ -27,6 +27,12 @@
     
     NSString *str3 = [NSString agoTime:1415952921000];
     NSLog(@"%@",str3);
+    
+    if ([@"16622090908" validatePhoneNumber]) {
+        NSLog(@"合法");
+    }else{
+        NSLog(@"非法");
+    }
     // Do any additional setup after loading the view, typically from a nib.
 }
 
