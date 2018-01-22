@@ -170,4 +170,17 @@
     
 }
 
+- (NSDictionary *)jsonStrToDic{
+    if (self.length > 0) {
+        NSData *jsonData = [self dataUsingEncoding:NSUTF8StringEncoding];
+        NSError *err;
+        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData
+                                                            options:NSJSONReadingMutableContainers
+                                                              error:&err];
+        return dic;
+    }else{
+        return @{};
+    }
+}
+
 @end

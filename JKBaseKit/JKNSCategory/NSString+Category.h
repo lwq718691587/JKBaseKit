@@ -93,4 +93,11 @@
  */
 + (NSString *)agoTime:(double )timestamp;
 
+/**
+ json字符串 转 字典
+
+ @return <#return value description#>
+ */
+- (NSDictionary *)jsonStrToDic;
+
 @end
