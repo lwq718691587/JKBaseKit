@@ -17,5 +17,6 @@
 #import "NSString+Category.h"
 #import "NSMutableArray+LoadPlist.h"
 #import "NSMutableDictionary+LoadPlist.h"
-
+#import "NSDictionary+jkCategory.h"
+#import "NSMutableDictionary+jkCategory.h"
 #endif /* JKBaseKit_h */
