@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name = 'JKBaseKit'
-s.version = '1.3.9'
+s.version = '1.4.0'
 s.license = 'MIT'
 s.summary = 'Simple APP Kit'
 s.homepage = 'https://github.com/lwq718691587/JKBaseKit'
@@ -28,6 +28,10 @@ end
 
 s.subspec 'JKNSCategory' do |ss|
 ss.source_files = "JKBaseKit/JKNSCategory","*.{h,m}"
+end
+
+s.subspec 'JKNSTool' do |ss|
+ss.source_files = "JKBaseKit/JKNSTool/**/*"
 end
 
 end

@@ -44,6 +44,10 @@
         "JKBaseKit/JKNSCategory",
         "*.{h,m}"
       ]
+    },
+    {
+      "name": "JKNSTool",
+      "source_files": "JKBaseKit/JKNSTool/**/*"
     }
   ]
 }

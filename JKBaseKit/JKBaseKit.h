@@ -19,4 +19,6 @@
 #import "NSMutableDictionary+LoadPlist.h"
 #import "NSDictionary+jkCategory.h"
 #import "NSMutableDictionary+jkCategory.h"
+#import "LPTimer.h"
+#import "NSTimer+BLocks.h"
 #endif /* JKBaseKit_h */
