@@ -64,8 +64,10 @@
 
 -(void)callPhone{
     NSString *callPhone = [NSString stringWithFormat:@"telprompt://%@", self];
-    NSComparisonResult compare = [[UIDevice currentDevice].systemVersion compare:@"10.0"];
-    if (compare == NSOrderedDescending || compare == NSOrderedSame) {
+//    NSComparisonResult compare = [[UIDevice currentDevice].systemVersion compare:@"10.0"];
+//    if (compare == NSOrderedDescending || compare == NSOrderedSame) {
+    double version = [UIDevice currentDevice].systemVersion.doubleValue;
+    if (version >= 10.0) {
         /// 大于等于10.0系统使用此openURL方法
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callPhone] options:@{} completionHandler:nil];
     } else {
