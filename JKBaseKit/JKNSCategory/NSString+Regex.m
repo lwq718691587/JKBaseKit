@@ -15,6 +15,14 @@
     return [pre evaluateWithObject:self];
 }
 
+-(BOOL)isValidString{
+    if ((![self isKindOfClass:[NSNull class]]) && self.length > 0) {
+        return YES;
+    }else{
+        return NO;
+    }
+}
+
 -(BOOL)validatePhoneNumber
 {
     /**

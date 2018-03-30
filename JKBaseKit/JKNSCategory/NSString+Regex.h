@@ -10,10 +10,16 @@
 
 @interface NSString (Regex)
 
+
+/**
+  字符串不为空 不为null
+ */
+-(BOOL)isValidString;
+
 /**
  *  验证字符串是否是电话号码
  */
--( BOOL )validatePhoneNumber;
+-(BOOL)validatePhoneNumber;
 
 /**
  *  匹配URL
