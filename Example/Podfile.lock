@@ -1,18 +1,18 @@
 PODS:
   - DateTools (2.0.0)
-  - JKBaseKit (1.3.9):
+  - JKBaseKit (1.4.3):
     - DateTools (= 2.0.0)
-    - JKBaseKit/FastCoder (= 1.3.9)
-    - JKBaseKit/JKMacro (= 1.3.9)
-    - JKBaseKit/JKNSCategory (= 1.3.9)
-    - JKBaseKit/JKNSTool (= 1.3.9)
-  - JKBaseKit/FastCoder (1.3.9):
+    - JKBaseKit/FastCoder (= 1.4.3)
+    - JKBaseKit/JKMacro (= 1.4.3)
+    - JKBaseKit/JKNSCategory (= 1.4.3)
+    - JKBaseKit/JKNSTool (= 1.4.3)
+  - JKBaseKit/FastCoder (1.4.3):
     - DateTools (= 2.0.0)
-  - JKBaseKit/JKMacro (1.3.9):
+  - JKBaseKit/JKMacro (1.4.3):
     - DateTools (= 2.0.0)
-  - JKBaseKit/JKNSCategory (1.3.9):
+  - JKBaseKit/JKNSCategory (1.4.3):
     - DateTools (= 2.0.0)
-  - JKBaseKit/JKNSTool (1.3.9):
+  - JKBaseKit/JKNSTool (1.4.3):
     - DateTools (= 2.0.0)
 
 DEPENDENCIES:
@@ -24,8 +24,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
-  JKBaseKit: 9a6fba76f99051d109bd4f35273dd79fc56bea35
+  JKBaseKit: 4bf6f28522fa244185d1bce23f638ec764f910ce
 
 PODFILE CHECKSUM: af354a0a2ca94ad3f53eae2d73c70acd7bbb816b
 
-COCOAPODS: 1.3.0.beta.2
+COCOAPODS: 1.4.0
