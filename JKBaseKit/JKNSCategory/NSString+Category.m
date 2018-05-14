@@ -117,6 +117,17 @@
     return [NSString stringWithFormat:@"%.2f",[self intValue]/100.f];
 }
 
+- (NSString *)getBalanceStrFromeIntnetStr_NOSpot{
+    
+    NSString *balance = [self getBalanceStrFromeIntnetStr];
+    
+    if (balance.intValue == balance.doubleValue) {
+        return [NSString stringWithFormat:@"%d",[self intValue]/100];
+    }else{
+        return balance;
+    }
+}
+
 //电话号码中间4位****显示
 - (NSString *)getSecrectPhoneNumber{
     return [NSString getSecrectStringWithPhoneNumber:self];

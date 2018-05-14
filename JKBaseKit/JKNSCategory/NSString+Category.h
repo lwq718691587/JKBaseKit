@@ -23,6 +23,11 @@
  转换单位 分->元
  */
 - (NSString *)getBalanceStrFromeIntnetStr;
+/**
+ 转换单位 分->元 如果是 整元 不显示小数点
+ */
+- (NSString *)getBalanceStrFromeIntnetStr_NOSpot;
+
 //电话号码中间4位****显示
 - (NSString *)getSecrectPhoneNumber;
 
